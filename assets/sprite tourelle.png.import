@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/portail-sprit-vert.webp-9e1973cb03bbd448731bf7aeef1816c2.stex"
+path="res://.import/sprite tourelle.png-a26b5d46eb46ac06931fd64add7e8111.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/portail-sprit-vert.webp"
-dest_files=[ "res://.import/portail-sprit-vert.webp-9e1973cb03bbd448731bf7aeef1816c2.stex" ]
+source_file="res://assets/sprite tourelle.png"
+dest_files=[ "res://.import/sprite tourelle.png-a26b5d46eb46ac06931fd64add7e8111.stex" ]
 
 [params]
 
