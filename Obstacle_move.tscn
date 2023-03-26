@@ -3,8 +3,6 @@
 [ext_resource type="Script" path="res://Scripts/Obstacle_move.gd" id="1_bhsbt"]
 [ext_resource type="Texture2D" uid="uid://df2b5yyb3f7vs" path="res://assets/sprite tourelle 2.png" id="2_10k1o"]
 
-[sub_resource type="CapsuleShape2D" id="1"]
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_uihii"]
 atlas = ExtResource("2_10k1o")
 region = Rect2(0, 0, 512, 512)
@@ -244,13 +242,20 @@ animations = [{
 "speed": 15.0
 }]
 
+[sub_resource type="CapsuleShape2D" id="1"]
+radius = 22.0
+height = 92.0
+
 [node name="Obstacle_move" type="Area2D"]
 script = ExtResource("1_bhsbt")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(0.246094, 0.246094)
 sprite_frames = SubResource("SpriteFrames_jym70")
 frame_progress = 0.432202
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 10)
+shape = SubResource("1")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

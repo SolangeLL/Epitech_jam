@@ -1,11 +1,12 @@
 extends CharacterBody2D
 
 var run_speed = 350
-var jump_speed = -500
+var jump_speed = -700
 var gravity = 1700
 var rotation_deg = 0
 
 var jumping = false
+var can_die = true
 
 func get_input():
 	velocity.x = 0
@@ -15,12 +16,17 @@ func get_input():
 	var revert = Input.is_action_just_pressed("revert")
 	var debug = Input.is_action_just_pressed("debug_speeed")
 	var debug2 = Input.is_action_just_pressed("debug_speed_buff")
+	var god = Input.is_action_just_pressed("god_mode")
+	
 	
 	if debug:
 		run_speed += 100
 	if debug2:
 		run_speed -= 100
 	var input = Input.is_action_pressed("close window")
+	
+	if god:
+		can_die = !can_die
 	
 	if input == true:
 		get_tree().quit()
@@ -49,7 +55,6 @@ func _physics_process(delta):
 	if !is_on_floor() and !is_on_ceiling() and rotation_deg < 90:
 		if $jump.playing == false:
 			$jump.play()
-		print(rotation_deg)
 		rotation_deg += 0.15
 		$Sprite2D.rotation += rotation_deg
 	if is_on_floor() or is_on_ceiling():
@@ -57,4 +62,5 @@ func _physics_process(delta):
 	pass
 
 func die():
-	global_position = Vector2(220,213)
+	if can_die:
+		global_position = Vector2(220,213)

@@ -6,11 +6,13 @@ func _ready():
 	$AnimatedSprite2D.play()
 	pass # Replace with function body.
 
-func _on_Turret_body_entered(body):
-	if body.is_in_group("Player"):
-		body.die()
-	
-
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	pass
+
+
+func _on_body_entered(body):
+	if body.is_in_group("Player"):
+		print("coucou")
+		body.die()
+	pass # Replace with function body.
