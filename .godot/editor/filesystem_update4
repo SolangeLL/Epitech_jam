@@ -1,8 +1,11 @@
 res://default_env.tres
-res://Obstacle.tscn
-res://Scripts/Obstacle.gd
-res://Obstacle_move.tscn
+res://Map.tscn
 res://Scripts/Obstacle_move.gd
 res://Main.tscn
-res://Map.tscn
 res://MenuScene.tscn
+res://Obstacle.tscn
+res://Obstacle_move.tscn
+res://GameScene.tscn
+res://Scripts/Map.gd
+res://Player.tscn
+res://Scripts/Player.gd

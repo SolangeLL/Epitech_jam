@@ -13,6 +13,13 @@ func get_input():
 	var left = Input.is_action_pressed('ui_left')
 	var jump = Input.is_action_pressed("jump")
 	var revert = Input.is_action_just_pressed("revert")
+	var debug = Input.is_action_just_pressed("debug_speeed")
+	var debug2 = Input.is_action_just_pressed("debug_speed_buff")
+	
+	if debug:
+		run_speed += 100
+	if debug2:
+		run_speed -= 100
 
 	if jump and (is_on_floor() or is_on_ceiling()):
 		velocity.y = jump_speed

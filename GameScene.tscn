@@ -5,7 +5,7 @@
 
 [node name="GameScene" type="Node"]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1")]
-position = Vector2(18, 123)
-
 [node name="Map" parent="." instance=ExtResource("2_5gtcb")]
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1")]
+position = Vector2(87, 194)

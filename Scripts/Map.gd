@@ -9,10 +9,6 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	$UpFloor/FirstBlock.global_position = $UpFloor/FirstBlock.global_position.move_toward($UpFloor/Marker2D.global_position, delta * speed)
-	$UpFloor/SecondBlock.global_position = $UpFloor/SecondBlock.global_position.move_toward($UpFloor/Marker2D.global_position, delta * speed)
-	$DownFloor/FirstBlock.global_position = $DownFloor/FirstBlock.global_position.move_toward($UpFloor/Marker2D.global_position, delta * speed)
-	$DownFloor/SecondBlock.global_position = $DownFloor/SecondBlock.global_position.move_toward($UpFloor/Marker2D.global_position, delta * speed)
 	pass
 
 

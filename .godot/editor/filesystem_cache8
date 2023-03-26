@@ -1,17 +1,17 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1679836113
-default_env.tres::Environment::3103850361161389210::1679836045::0::1::::<><>::
+::res://::1679860290
+default_env.tres::Environment::3103850361161389210::1679836572::0::1::::<><>::
 GameScene.tscn::PackedScene::3759042087809546598::1679834969::0::1::::<><>::uid://bhbonegibjfo4<>uid://c56vq5rm3a4yl
 icon.png::CompressedTexture2D::5717893827992112871::1679834969::1679834969::1::::<><>::
-Main.tscn::PackedScene::7814790653281432628::1679835559::0::1::::<><>::res://Scripts/Main.gd<>uid://dwo8agi72jcsp<>uid://bts54ylbl31ti
-Map.tscn::PackedScene::6943807618998457007::1679835559::0::1::::<><>::
+Main.tscn::PackedScene::7814790653281432628::1679836572::0::1::::<><>::res://Scripts/Main.gd<>uid://dwo8agi72jcsp<>uid://bts54ylbl31ti
+Map.tscn::PackedScene::6943807618998457007::1679860260::0::1::::<><>::res://Scripts/Map.gd<>uid://3nqrihdw1fgt
 maxresdefault.jpg::CompressedTexture2D::7657791730372212534::1679834969::1679834969::1::::<><>::
-MenuScene.tscn::PackedScene::8734321889423053299::1679835559::0::1::::<><>::res://Scripts/MenuScene.gd<>uid://dhdqyf5owdwqg<>uid://bh0i10njc1ht2
-Obstacle.tscn::PackedScene::7131744192173821048::1679836045::0::1::::<><>::res://Scripts/Obstacle.gd
+MenuScene.tscn::PackedScene::8734321889423053299::1679836572::0::1::::<><>::res://Scripts/MenuScene.gd<>uid://dhdqyf5owdwqg<>uid://bh0i10njc1ht2
+Obstacle.tscn::PackedScene::7131744192173821048::1679836572::0::1::::<><>::res://Scripts/Obstacle.gd
+Obstacle_move.tscn::PackedScene::5313186439369816866::1679859013::0::1::::<><>::res://Scripts/Obstacle_move.gd<>uid://df2b5yyb3f7vs
 Player.tscn::PackedScene::2880680439860288485::1679834969::0::1::::<><>::res://Scripts/Player.gd<>uid://dfn6qhj457pqa
 portal.ttf::FontFile::2929885533173314317::1679834969::1679834969::1::::<><>::
 README.md::TextFile::-1::1679834969::0::1::::<><>::
-Obstacle_move.tscn::PackedScene::5313186439369816866::1679836125::0::1::::<><>::res://Scripts/Obstacle.gd
 ::res://assets/::1679835719
 cube.png::CompressedTexture2D::7538954362476164636::1679834969::1679834994::1::::<><>::
 fond noir.jpg::CompressedTexture2D::9221493121741596826::1679834969::1679834969::1::::<><>::
@@ -22,8 +22,10 @@ sprit-player.jpg::CompressedTexture2D::5307904933197111939::1679834969::16798349
 sprite tourelle 2.png::CompressedTexture2D::7566060057157788900::1679835323::1679835719::1::::<><>::
 ::res://default/::1679834969
 defaukt.png::CompressedTexture2D::1296234079747779879::1679834969::1679834969::1::::<><>::
-::res://Scripts/::1679836046
+::res://Scripts/::1679860260
 GameScene.gd::GDScript::-1::1679834969::0::1::::<>Node<>::
+Map.gd::GDScript::-1::1679860260::0::1::::<>Node<>::
 MenuScene.gd::GDScript::-1::1679834969::0::1::::<>Node<>::
-Obstacle.gd::GDScript::-1::1679836046::0::1::::<>Area2D<>::
+Obstacle.gd::GDScript::-1::1679836311::0::1::::<>Area2D<>::
+Obstacle_move.gd::GDScript::-1::1679859013::0::1::::<>Area2D<>::
 Player.gd::GDScript::-1::1679834969::0::1::::<>CharacterBody2D<>::
