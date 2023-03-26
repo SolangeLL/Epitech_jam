@@ -3,6 +3,7 @@ extends CharacterBody2D
 var run_speed = 350
 var jump_speed = -500
 var gravity = 1700
+var rotation_deg = 0
 
 var jumping = false
 
@@ -34,4 +35,10 @@ func _physics_process(delta):
 	# Rotate sprite according to ground normal
 	var normal = get_floor_normal()
 	$Sprite2D.rotation = normal.angle()
+	if !is_on_floor() and !is_on_ceiling() and rotation_deg < 90:
+		print(rotation_deg)
+		rotation_deg += 0.15
+		$Sprite2D.rotation += rotation_deg
+	if is_on_floor() or is_on_ceiling():
+		rotation_deg = 0
 	pass
