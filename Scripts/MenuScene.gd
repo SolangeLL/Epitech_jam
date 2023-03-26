@@ -7,9 +7,11 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
-
+func _process(delta):
+	var input = Input.is_action_pressed("close window")
+	
+	if input == true:
+		get_tree().quit()
 
 func _on_close_pressed():
 	get_tree().quit()

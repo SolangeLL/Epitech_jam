@@ -13,6 +13,10 @@ func get_input():
 	var left = Input.is_action_pressed('ui_left')
 	var jump = Input.is_action_pressed("jump")
 	var revert = Input.is_action_just_pressed("revert")
+	var input = Input.is_action_pressed("close window")
+	
+	if input == true:
+		get_tree().quit()
 
 	if jump and (is_on_floor() or is_on_ceiling()):
 		velocity.y = jump_speed
