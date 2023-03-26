@@ -1,21 +1,217 @@
-[gd_scene format=3 uid="uid://c56vq5rm3a4yl"]
+[gd_scene load_steps=4 format=3 uid="uid://c56vq5rm3a4yl"]
+
+[ext_resource type="Script" path="res://Scripts/Map.gd" id="1_6ust5"]
+[ext_resource type="Texture2D" uid="uid://3nqrihdw1fgt" path="res://assets/sol & plafond sprite.jpg" id="1_rvmlj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ua65i"]
+size = Vector2(1296, 147)
 
 [node name="Map" type="Node"]
+script = ExtResource("1_6ust5")
 
 [node name="UpFloor" type="StaticBody2D" parent="."]
 
-[node name="Polygon2D" type="Polygon2D" parent="UpFloor"]
-color = Color(0.054902, 0.109804, 0.670588, 1)
-polygon = PackedVector2Array(-11, 44, 534, 10, 1116, 65, 1041, -79, -58, -32)
+[node name="FirstBlock" type="Node2D" parent="UpFloor"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="UpFloor"]
-polygon = PackedVector2Array(-7, 37, 529, 1, 1112, 56, 1037, -80, -62, -35, -13, 37)
+[node name="Sprite2D" type="Sprite2D" parent="UpFloor/FirstBlock"]
+position = Vector2(76, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="UpFloor/FirstBlock"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="UpFloor/FirstBlock"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="UpFloor/FirstBlock"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="UpFloor/FirstBlock"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="UpFloor/FirstBlock"]
+position = Vector2(926, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="UpFloor/FirstBlock"]
+position = Vector2(1096, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="UpFloor/FirstBlock"]
+position = Vector2(1266, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="ScreenNotifier" type="VisibleOnScreenNotifier2D" parent="UpFloor/FirstBlock"]
+visible = false
+position = Vector2(669, 51)
+scale = Vector2(68.05, 8.675)
+
+[node name="SecondBlock" type="Node2D" parent="UpFloor"]
+visible = false
+
+[node name="Sprite2D" type="Sprite2D" parent="UpFloor/SecondBlock"]
+position = Vector2(1436, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="UpFloor/SecondBlock"]
+position = Vector2(1606, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="UpFloor/SecondBlock"]
+position = Vector2(1776, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="UpFloor/SecondBlock"]
+position = Vector2(1946, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="UpFloor/SecondBlock"]
+position = Vector2(2116, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="UpFloor/SecondBlock"]
+position = Vector2(2286, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="UpFloor/SecondBlock"]
+position = Vector2(2456, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="UpFloor/SecondBlock"]
+position = Vector2(2626, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="ScreenNotifier" type="VisibleOnScreenNotifier2D" parent="UpFloor/SecondBlock"]
+position = Vector2(2031, 51)
+scale = Vector2(68.05, 8.675)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="UpFloor"]
+position = Vector2(589, 63.5)
+shape = SubResource("RectangleShape2D_ua65i")
+
+[node name="Marker2D" type="Marker2D" parent="UpFloor"]
+position = Vector2(-2000, 0)
 
 [node name="DownFloor" type="StaticBody2D" parent="."]
 
-[node name="Polygon2D" type="Polygon2D" parent="DownFloor"]
-color = Color(0.054902, 0.333333, 0.0784314, 1)
-polygon = PackedVector2Array(79, 380, 1042, 379, 1040, 601, -78, 603, -99, 264)
+[node name="FirstBlock" type="Node2D" parent="DownFloor"]
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="DownFloor"]
-polygon = PackedVector2Array(-92, 260, 74, 378, 1043, 381, 1032, 598, -74, 600)
+[node name="Sprite2D" type="Sprite2D" parent="DownFloor/FirstBlock"]
+position = Vector2(76, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="DownFloor/FirstBlock"]
+position = Vector2(246, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="DownFloor/FirstBlock"]
+position = Vector2(416, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="DownFloor/FirstBlock"]
+position = Vector2(586, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="DownFloor/FirstBlock"]
+position = Vector2(756, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="DownFloor/FirstBlock"]
+position = Vector2(926, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="DownFloor/FirstBlock"]
+position = Vector2(1096, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="DownFloor/FirstBlock"]
+position = Vector2(1266, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="ScreenNotifier" type="VisibleOnScreenNotifier2D" parent="DownFloor/FirstBlock"]
+position = Vector2(671.5, 604.25)
+scale = Vector2(68.05, 8.675)
+
+[node name="SecondBlock" type="Node2D" parent="DownFloor"]
+
+[node name="Sprite2D" type="Sprite2D" parent="DownFloor/SecondBlock"]
+position = Vector2(1436, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="DownFloor/SecondBlock"]
+position = Vector2(1606, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="DownFloor/SecondBlock"]
+position = Vector2(1776, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="DownFloor/SecondBlock"]
+position = Vector2(1946, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="DownFloor/SecondBlock"]
+position = Vector2(2116, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="DownFloor/SecondBlock"]
+position = Vector2(2286, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="DownFloor/SecondBlock"]
+position = Vector2(2456, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="DownFloor/SecondBlock"]
+position = Vector2(2626, 603)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="ScreenNotifier" type="VisibleOnScreenNotifier2D" parent="DownFloor/SecondBlock"]
+position = Vector2(2031, 605)
+scale = Vector2(68.05, 8.675)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DownFloor"]
+position = Vector2(601, 594)
+shape = SubResource("RectangleShape2D_ua65i")
+
+[node name="Marker2D" type="Marker2D" parent="DownFloor"]
+position = Vector2(-2000, 600)
+
+[connection signal="screen_exited" from="UpFloor/FirstBlock/ScreenNotifier" to="." method="up_block_exited"]
+[connection signal="screen_exited" from="UpFloor/SecondBlock/ScreenNotifier" to="." method="up_second_block_exited"]
