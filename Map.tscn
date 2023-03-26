@@ -44,73 +44,77 @@ scale = Vector2(0.404762, 0.404762)
 texture = ExtResource("1_rvmlj")
 
 [node name="Sprite2D7" type="Sprite2D" parent="UpFloor/FirstBlock"]
-position = Vector2(1096, 52)
-scale = Vector2(0.404762, 0.404762)
+position = Vector2(1011, -33)
+scale = Vector2(0.566265, 0.404762)
 texture = ExtResource("1_rvmlj")
-
-[node name="Sprite2D8" type="Sprite2D" parent="UpFloor/FirstBlock"]
-position = Vector2(1266, 52)
-scale = Vector2(0.404762, 0.404762)
-texture = ExtResource("1_rvmlj")
+centered = false
+region_enabled = true
+region_rect = Rect2(1.488, 0, 249, 420.308)
 
 [node name="ScreenNotifier" type="VisibleOnScreenNotifier2D" parent="UpFloor/FirstBlock"]
-visible = false
-position = Vector2(669, 51)
-scale = Vector2(68.05, 8.675)
+position = Vector2(980.5, 59.875)
+scale = Vector2(4.75, 7.7875)
+
+[node name="Polygon2D" type="Polygon2D" parent="UpFloor/FirstBlock/ScreenNotifier"]
+polygon = PackedVector2Array(-4.73683, -3.83628, -5.57895, 4.25361, 4.94737, 4.51043, 4.94737, -4.0931)
 
 [node name="SecondBlock" type="Node2D" parent="UpFloor"]
-visible = false
 
 [node name="Sprite2D" type="Sprite2D" parent="UpFloor/SecondBlock"]
-position = Vector2(1436, 52)
+position = Vector2(1215, 52)
 scale = Vector2(0.404762, 0.404762)
 texture = ExtResource("1_rvmlj")
 
 [node name="Sprite2D4" type="Sprite2D" parent="UpFloor/SecondBlock"]
-position = Vector2(1606, 52)
+position = Vector2(1385, 52)
 scale = Vector2(0.404762, 0.404762)
 texture = ExtResource("1_rvmlj")
 
 [node name="Sprite2D2" type="Sprite2D" parent="UpFloor/SecondBlock"]
-position = Vector2(1776, 52)
+position = Vector2(1555, 52)
 scale = Vector2(0.404762, 0.404762)
 texture = ExtResource("1_rvmlj")
 
 [node name="Sprite2D5" type="Sprite2D" parent="UpFloor/SecondBlock"]
-position = Vector2(1946, 52)
+position = Vector2(1725, 52)
 scale = Vector2(0.404762, 0.404762)
 texture = ExtResource("1_rvmlj")
 
 [node name="Sprite2D3" type="Sprite2D" parent="UpFloor/SecondBlock"]
-position = Vector2(2116, 52)
+position = Vector2(1895, 52)
 scale = Vector2(0.404762, 0.404762)
 texture = ExtResource("1_rvmlj")
 
 [node name="Sprite2D6" type="Sprite2D" parent="UpFloor/SecondBlock"]
-position = Vector2(2286, 52)
+position = Vector2(2065, 52)
 scale = Vector2(0.404762, 0.404762)
 texture = ExtResource("1_rvmlj")
 
 [node name="Sprite2D7" type="Sprite2D" parent="UpFloor/SecondBlock"]
-position = Vector2(2456, 52)
+position = Vector2(2235, 52)
 scale = Vector2(0.404762, 0.404762)
 texture = ExtResource("1_rvmlj")
 
 [node name="Sprite2D8" type="Sprite2D" parent="UpFloor/SecondBlock"]
-position = Vector2(2626, 52)
+position = Vector2(2405, 52)
 scale = Vector2(0.404762, 0.404762)
 texture = ExtResource("1_rvmlj")
 
 [node name="ScreenNotifier" type="VisibleOnScreenNotifier2D" parent="UpFloor/SecondBlock"]
-position = Vector2(2031, 51)
-scale = Vector2(68.05, 8.675)
+position = Vector2(2442.5, 53.5)
+scale = Vector2(4.8, 8.425)
+
+[node name="Polygon2D" type="Polygon2D" parent="UpFloor/SecondBlock/ScreenNotifier"]
+color = Color(1, 0.176471, 1, 1)
+polygon = PackedVector2Array(-2.39584, -1.83976, -4.27084, 4.21365, 6.77084, 4.45104, 6.14584, -2.07715)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="UpFloor"]
+visible = false
 position = Vector2(589, 63.5)
 shape = SubResource("RectangleShape2D_ua65i")
 
 [node name="Marker2D" type="Marker2D" parent="UpFloor"]
-position = Vector2(-2000, 0)
+position = Vector2(-10000, 0)
 
 [node name="DownFloor" type="StaticBody2D" parent="."]
 
