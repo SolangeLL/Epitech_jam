@@ -1,12 +1,5 @@
 extends Node
 
-signal start
-
-
-# Declare member variables here. Examples:
-# var a = 2
-# var b = "text"
-
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -18,9 +11,9 @@ func _ready():
 #	pass
 
 
-func _on_Button_pressed():
-	emit_signal("start")
-
-
 func _on_close_pressed():
 	get_tree().quit()
+
+
+func _on_start_pressed():
+	get_tree().change_scene_to_file("res://GameScene.tscn")
