@@ -1,13 +1,20 @@
-[gd_scene load_steps=3 format=3 uid="uid://clxk7ibek31yl"]
+[gd_scene load_steps=4 format=3 uid="uid://chx0n0qfex7h3"]
+
+[ext_resource type="Script" path="res://Scripts/Obstacle_move.gd" id="1_bhsbt"]
 
 [sub_resource type="CapsuleShape2D" id="1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_jym70"]
 
 [node name="Obstacle_move" type="Area2D"]
+script = ExtResource("1_bhsbt")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("1")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_jym70")
+
+[node name="Marker2D" type="Marker2D" parent="."]
+position = Vector2(751, 15)
+script = ExtResource("1_bhsbt")

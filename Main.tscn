@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/Main.gd" id="1_w7j7n"]
 [ext_resource type="PackedScene" uid="uid://dwo8agi72jcsp" path="res://MenuScene.tscn" id="2_f2wp6"]
-[ext_resource type="PackedScene" path="res://GameScene.tscn" id="3_ld3pj"]
+[ext_resource type="PackedScene" uid="uid://bts54ylbl31ti" path="res://GameScene.tscn" id="3_ld3pj"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_w7j7n")
@@ -10,5 +10,3 @@ script = ExtResource("1_w7j7n")
 [node name="MenuScene" parent="." instance=ExtResource("2_f2wp6")]
 
 [node name="GameScene" parent="." instance=ExtResource("3_ld3pj")]
-
-[connection signal="start" from="MenuScene" to="." method="_on_menu_scene_start"]
