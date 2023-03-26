@@ -1,10 +1,14 @@
-[gd_scene load_steps=4 format=3 uid="uid://c56vq5rm3a4yl"]
+[gd_scene load_steps=6 format=3 uid="uid://c56vq5rm3a4yl"]
 
 [ext_resource type="Script" path="res://Scripts/Map.gd" id="1_6ust5"]
 [ext_resource type="Texture2D" uid="uid://3nqrihdw1fgt" path="res://assets/sol & plafond sprite.jpg" id="1_rvmlj"]
+[ext_resource type="Texture2D" uid="uid://bhg1cohvv5ft0" path="res://assets/event_journee-portes-ouvertes-a-epitech-nancy_247_808858.jpg" id="3_v0684"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6t8py"]
 size = Vector2(1020, 170)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bqxga"]
+size = Vector2(170, 850)
 
 [node name="Map" type="Node"]
 script = ExtResource("1_6ust5")
@@ -274,6 +278,435 @@ scale = Vector2(0.404762, 0.404762)
 texture = ExtResource("1_rvmlj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="block5"]
+position = Vector2(501, -118)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block74" type="StaticBody2D" parent="."]
+position = Vector2(-2031, 33)
+
+[node name="Sprite2D" type="Sprite2D" parent="block74"]
+position = Vector2(76, 52.0001)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block74"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block74"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block74"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block74"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block74"]
+position = Vector2(926, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block74"]
+position = Vector2(76, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block74"]
+position = Vector2(246, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block74"]
+position = Vector2(416, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block74"]
+position = Vector2(586, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block74"]
+position = Vector2(756, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block74"]
+position = Vector2(926, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block74"]
+position = Vector2(501, 52)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block75" type="StaticBody2D" parent="."]
+position = Vector2(-1011, 33)
+
+[node name="Sprite2D" type="Sprite2D" parent="block75"]
+position = Vector2(76, 52.0001)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block75"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block75"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block75"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block75"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block75"]
+position = Vector2(926, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block75"]
+position = Vector2(76, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block75"]
+position = Vector2(246, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block75"]
+position = Vector2(416, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block75"]
+position = Vector2(586, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block75"]
+position = Vector2(756, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block75"]
+position = Vector2(926, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D13" type="Sprite2D" parent="block75"]
+position = Vector2(926, 365.5)
+scale = Vector2(0.404762, 0.37381)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D14" type="Sprite2D" parent="block75"]
+position = Vector2(926, 212)
+scale = Vector2(0.404762, 0.357143)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D15" type="Sprite2D" parent="block75"]
+position = Vector2(756, 365.5)
+scale = Vector2(0.404762, 0.37381)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D16" type="Sprite2D" parent="block75"]
+position = Vector2(756, 212)
+scale = Vector2(0.404762, 0.357143)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D17" type="Sprite2D" parent="block75"]
+position = Vector2(586, 365.5)
+scale = Vector2(0.404762, 0.37381)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D18" type="Sprite2D" parent="block75"]
+position = Vector2(586, 212)
+scale = Vector2(0.404762, 0.357143)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D19" type="Sprite2D" parent="block75"]
+position = Vector2(416, 365.5)
+scale = Vector2(0.404762, 0.37381)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D20" type="Sprite2D" parent="block75"]
+position = Vector2(416, 212)
+scale = Vector2(0.404762, 0.357143)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D21" type="Sprite2D" parent="block75"]
+position = Vector2(246, 365.5)
+scale = Vector2(0.404762, 0.37381)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D22" type="Sprite2D" parent="block75"]
+position = Vector2(246, 212)
+scale = Vector2(0.404762, 0.357143)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D23" type="Sprite2D" parent="block75"]
+position = Vector2(76, 365.5)
+scale = Vector2(0.404762, 0.37381)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D24" type="Sprite2D" parent="block75"]
+position = Vector2(76.0001, 212)
+scale = Vector2(0.404762, 0.357143)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block75"]
+position = Vector2(501, 52)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block76" type="StaticBody2D" parent="."]
+position = Vector2(-2031, 680)
+
+[node name="Sprite2D" type="Sprite2D" parent="block76"]
+position = Vector2(76, 52.0001)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block76"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block76"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block76"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block76"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block76"]
+position = Vector2(926, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block76"]
+position = Vector2(76, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block76"]
+position = Vector2(246, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block76"]
+position = Vector2(416, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block76"]
+position = Vector2(586, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block76"]
+position = Vector2(756, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block76"]
+position = Vector2(926, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block76"]
+position = Vector2(501, -118)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block78" type="StaticBody2D" parent="."]
+position = Vector2(-3051, 680)
+
+[node name="Sprite2D" type="Sprite2D" parent="block78"]
+position = Vector2(76, 52.0001)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block78"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block78"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block78"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block78"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block78"]
+position = Vector2(926, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block78"]
+position = Vector2(76, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D13" type="Sprite2D" parent="block78"]
+position = Vector2(-94, 52.0004)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D14" type="Sprite2D" parent="block78"]
+position = Vector2(-94, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D15" type="Sprite2D" parent="block78"]
+position = Vector2(-94, -288)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D16" type="Sprite2D" parent="block78"]
+position = Vector2(-94, -458)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D17" type="Sprite2D" parent="block78"]
+position = Vector2(-94, -628)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D18" type="Sprite2D" parent="block78"]
+position = Vector2(-94, -798)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block78"]
+position = Vector2(246, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block78"]
+position = Vector2(416, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block78"]
+position = Vector2(586, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block78"]
+position = Vector2(756, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block78"]
+position = Vector2(926, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block78"]
+position = Vector2(501, -118)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="block78"]
+position = Vector2(-94, -458)
+shape = SubResource("RectangleShape2D_bqxga")
+
+[node name="block77" type="StaticBody2D" parent="."]
+position = Vector2(-1011, 680)
+
+[node name="Sprite2D" type="Sprite2D" parent="block77"]
+position = Vector2(76, 52.0001)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block77"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block77"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block77"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block77"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block77"]
+position = Vector2(926, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block77"]
+position = Vector2(76, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block77"]
+position = Vector2(246, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block77"]
+position = Vector2(416, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block77"]
+position = Vector2(586, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block77"]
+position = Vector2(756, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block77"]
+position = Vector2(926, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block77"]
 position = Vector2(501, -118)
 shape = SubResource("RectangleShape2D_6t8py")
 
@@ -4502,6 +4935,1016 @@ texture = ExtResource("1_rvmlj")
 position = Vector2(501, -118)
 shape = SubResource("RectangleShape2D_6t8py")
 
+[node name="block79" type="StaticBody2D" parent="."]
+position = Vector2(34507, 731)
+
+[node name="Sprite2D" type="Sprite2D" parent="block79"]
+position = Vector2(76, 52.0001)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block79"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block79"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block79"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block79"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block79"]
+position = Vector2(926, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block79"]
+position = Vector2(76, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block79"]
+position = Vector2(246, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block79"]
+position = Vector2(416, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block79"]
+position = Vector2(586, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block79"]
+position = Vector2(756, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block79"]
+position = Vector2(926, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block79"]
+position = Vector2(501, 52)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block80" type="StaticBody2D" parent="."]
+position = Vector2(34507, 1378)
+
+[node name="Sprite2D" type="Sprite2D" parent="block80"]
+position = Vector2(76, 52.0001)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block80"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block80"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block80"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block80"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block80"]
+position = Vector2(926, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block80"]
+position = Vector2(76, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block80"]
+position = Vector2(246, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block80"]
+position = Vector2(416, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block80"]
+position = Vector2(586, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block80"]
+position = Vector2(756, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block80"]
+position = Vector2(926, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block80"]
+position = Vector2(501, -118)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block81" type="StaticBody2D" parent="."]
+position = Vector2(35527, 1378)
+
+[node name="Sprite2D" type="Sprite2D" parent="block81"]
+position = Vector2(76, 52.0001)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block81"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block81"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block81"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block81"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block81"]
+position = Vector2(926, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block81"]
+position = Vector2(76, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block81"]
+position = Vector2(246, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block81"]
+position = Vector2(416, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block81"]
+position = Vector2(586, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block81"]
+position = Vector2(756, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block81"]
+position = Vector2(926, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block81"]
+position = Vector2(501, -118)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block85" type="StaticBody2D" parent="."]
+position = Vector2(36529, -2428)
+rotation = 3.14159
+
+[node name="Sprite2D" type="Sprite2D" parent="block85"]
+position = Vector2(76, 52.0001)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block85"]
+position = Vector2(246, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block85"]
+position = Vector2(416, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block85"]
+position = Vector2(586, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block85"]
+position = Vector2(756, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block85"]
+position = Vector2(926, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block85"]
+position = Vector2(76, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block85"]
+position = Vector2(246, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block85"]
+position = Vector2(416, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block85"]
+position = Vector2(586, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block85"]
+position = Vector2(756, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block85"]
+position = Vector2(926, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block85"]
+position = Vector2(501, -118)
+rotation = 3.14159
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block89" type="StaticBody2D" parent="."]
+position = Vector2(37549, -2428)
+rotation = 3.14159
+
+[node name="Sprite2D" type="Sprite2D" parent="block89"]
+position = Vector2(76, 52.0001)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block89"]
+position = Vector2(246, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block89"]
+position = Vector2(416, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block89"]
+position = Vector2(586, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block89"]
+position = Vector2(756, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block89"]
+position = Vector2(926, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block89"]
+position = Vector2(76, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block89"]
+position = Vector2(246, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block89"]
+position = Vector2(416, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block89"]
+position = Vector2(586, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block89"]
+position = Vector2(756, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block89"]
+position = Vector2(926, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block89"]
+position = Vector2(501, -118)
+rotation = 3.14159
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block91" type="StaticBody2D" parent="."]
+position = Vector2(38569, -2428)
+rotation = 3.14159
+
+[node name="Sprite2D" type="Sprite2D" parent="block91"]
+position = Vector2(76, 52.0001)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block91"]
+position = Vector2(246, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block91"]
+position = Vector2(416, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block91"]
+position = Vector2(586, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block91"]
+position = Vector2(756, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block91"]
+position = Vector2(926, 52)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block91"]
+position = Vector2(76, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block91"]
+position = Vector2(246, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block91"]
+position = Vector2(416, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block91"]
+position = Vector2(586, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block91"]
+position = Vector2(756, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block91"]
+position = Vector2(926, -118)
+rotation = 3.14159
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block91"]
+position = Vector2(501, -118)
+rotation = 3.14159
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block92" type="StaticBody2D" parent="."]
+position = Vector2(37567, -1512)
+
+[node name="Sprite2D" type="Sprite2D" parent="block92"]
+position = Vector2(76, 52.0001)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block92"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block92"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block92"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block92"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block92"]
+position = Vector2(926, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block92"]
+position = Vector2(76, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block92"]
+position = Vector2(246, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block92"]
+position = Vector2(416, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block92"]
+position = Vector2(586, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block92"]
+position = Vector2(756, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block92"]
+position = Vector2(926, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block92"]
+position = Vector2(501, -118)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block90" type="StaticBody2D" parent="."]
+position = Vector2(36547, -1512)
+
+[node name="Sprite2D" type="Sprite2D" parent="block90"]
+position = Vector2(76, 52.0001)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block90"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block90"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block90"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block90"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block90"]
+position = Vector2(926, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block90"]
+position = Vector2(76, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block90"]
+position = Vector2(246, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block90"]
+position = Vector2(416, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block90"]
+position = Vector2(586, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block90"]
+position = Vector2(756, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block90"]
+position = Vector2(926, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block90"]
+position = Vector2(501, -118)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block82" type="StaticBody2D" parent="."]
+position = Vector2(36741, 1506)
+rotation = -1.5708
+
+[node name="Sprite2D" type="Sprite2D" parent="block82"]
+position = Vector2(76, 52.0001)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block82"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block82"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block82"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block82"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block82"]
+position = Vector2(926, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block82"]
+position = Vector2(76, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block82"]
+position = Vector2(246, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block82"]
+position = Vector2(416, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block82"]
+position = Vector2(586, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block82"]
+position = Vector2(756, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block82"]
+position = Vector2(926, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block82"]
+position = Vector2(501, -118)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block83" type="StaticBody2D" parent="."]
+position = Vector2(36741, 486)
+rotation = -1.5708
+
+[node name="Sprite2D" type="Sprite2D" parent="block83"]
+position = Vector2(76, 52.0001)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block83"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block83"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block83"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block83"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block83"]
+position = Vector2(926, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block83"]
+position = Vector2(76, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block83"]
+position = Vector2(246, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block83"]
+position = Vector2(416, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block83"]
+position = Vector2(586, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block83"]
+position = Vector2(756, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block83"]
+position = Vector2(926, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block83"]
+position = Vector2(501, -118)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block86" type="StaticBody2D" parent="."]
+position = Vector2(36741, -534)
+rotation = -1.5708
+
+[node name="Sprite2D" type="Sprite2D" parent="block86"]
+position = Vector2(76, 52.0001)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block86"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block86"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block86"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block86"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block86"]
+position = Vector2(926, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block86"]
+position = Vector2(76, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block86"]
+position = Vector2(246, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block86"]
+position = Vector2(416, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block86"]
+position = Vector2(586, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block86"]
+position = Vector2(756, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block86"]
+position = Vector2(926, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block86"]
+position = Vector2(501, -118)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block87" type="StaticBody2D" parent="."]
+position = Vector2(35315, -1536)
+rotation = 1.5708
+
+[node name="Sprite2D" type="Sprite2D" parent="block87"]
+position = Vector2(76, 52.0001)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block87"]
+position = Vector2(246, 52)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block87"]
+position = Vector2(416, 52)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block87"]
+position = Vector2(586, 52)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block87"]
+position = Vector2(756, 52)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block87"]
+position = Vector2(926, 52)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block87"]
+position = Vector2(76, -118)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block87"]
+position = Vector2(246, -118)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block87"]
+position = Vector2(416, -118)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block87"]
+position = Vector2(586, -118)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block87"]
+position = Vector2(756, -118)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block87"]
+position = Vector2(926, -118)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block87"]
+position = Vector2(501, -118)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block88" type="StaticBody2D" parent="."]
+position = Vector2(35315, -2556)
+rotation = 1.5708
+
+[node name="Sprite2D" type="Sprite2D" parent="block88"]
+position = Vector2(76, 52.0001)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block88"]
+position = Vector2(246, 52)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block88"]
+position = Vector2(416, 52)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block88"]
+position = Vector2(586, 52)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block88"]
+position = Vector2(756, 52)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block88"]
+position = Vector2(926, 52)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block88"]
+position = Vector2(76, -118)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block88"]
+position = Vector2(246, -118)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block88"]
+position = Vector2(416, -118)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block88"]
+position = Vector2(586, -118)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block88"]
+position = Vector2(756, -118)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block88"]
+position = Vector2(926, -118)
+rotation = 1.5708
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block88"]
+position = Vector2(501, -118)
+shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="block84" type="StaticBody2D" parent="."]
+position = Vector2(35315, -516)
+rotation = 1.5708
+
+[node name="Sprite2D" type="Sprite2D" parent="block84"]
+position = Vector2(76, 52.0001)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D4" type="Sprite2D" parent="block84"]
+position = Vector2(246, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D2" type="Sprite2D" parent="block84"]
+position = Vector2(416, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D5" type="Sprite2D" parent="block84"]
+position = Vector2(586, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D3" type="Sprite2D" parent="block84"]
+position = Vector2(756, 52)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D6" type="Sprite2D" parent="block84"]
+position = Vector2(942.479, 52)
+scale = Vector2(0.483233, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D7" type="Sprite2D" parent="block84"]
+position = Vector2(76, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D8" type="Sprite2D" parent="block84"]
+position = Vector2(246, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D9" type="Sprite2D" parent="block84"]
+position = Vector2(416, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D10" type="Sprite2D" parent="block84"]
+position = Vector2(586, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D11" type="Sprite2D" parent="block84"]
+position = Vector2(756, -118)
+scale = Vector2(0.404762, 0.404762)
+texture = ExtResource("1_rvmlj")
+
+[node name="Sprite2D12" type="Sprite2D" parent="block84"]
+position = Vector2(942.491, -118.003)
+scale = Vector2(0.483289, 0.404777)
+texture = ExtResource("1_rvmlj")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="block84"]
+position = Vector2(501, -118)
+shape = SubResource("RectangleShape2D_6t8py")
+
 [node name="block69" type="StaticBody2D" parent="."]
 position = Vector2(32523, 381)
 rotation = 0.174533
@@ -4840,3 +6283,8 @@ texture = ExtResource("1_rvmlj")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="block73"]
 position = Vector2(501, -118)
 shape = SubResource("RectangleShape2D_6t8py")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2530, 149)
+scale = Vector2(1.31714, 1.25862)
+texture = ExtResource("3_v0684")

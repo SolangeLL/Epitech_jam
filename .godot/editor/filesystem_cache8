@@ -1,19 +1,24 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1679860290
-default_env.tres::Environment::3103850361161389210::1679836572::0::1::::<><>::
-GameScene.tscn::PackedScene::3759042087809546598::1679834969::0::1::::<><>::uid://bhbonegibjfo4<>uid://c56vq5rm3a4yl
+::res://::1679864946
+default_env.tres::Environment::3103850361161389210::1679864945::0::1::::<><>::
+GameScene.gd::GDScript::-1::1679864030::0::1::::<>Node<>::
+GameScene.tscn::PackedScene::3759042087809546598::1679864324::0::1::::<><>::uid://bhbonegibjfo4<>res://GameScene.gd<>uid://c56vq5rm3a4yl<>uid://uyknfsxqkev0
 icon.png::CompressedTexture2D::5717893827992112871::1679834969::1679834969::1::::<><>::
-Main.tscn::PackedScene::7814790653281432628::1679836572::0::1::::<><>::res://Scripts/Main.gd<>uid://dwo8agi72jcsp<>uid://bts54ylbl31ti
-Map.tscn::PackedScene::6943807618998457007::1679860260::0::1::::<><>::res://Scripts/Map.gd<>uid://3nqrihdw1fgt
+Main.tscn::PackedScene::7814790653281432628::1679864324::0::1::::<><>::res://Scripts/Main.gd<>uid://dwo8agi72jcsp<>uid://bts54ylbl31ti
+Map.tscn::PackedScene::6943807618998457007::1679864946::0::1::::<><>::res://Scripts/Map.gd<>uid://3nqrihdw1fgt
 maxresdefault.jpg::CompressedTexture2D::7657791730372212534::1679834969::1679834969::1::::<><>::
-MenuScene.tscn::PackedScene::8734321889423053299::1679836572::0::1::::<><>::res://Scripts/MenuScene.gd<>uid://dhdqyf5owdwqg<>uid://bh0i10njc1ht2
-Obstacle.tscn::PackedScene::7131744192173821048::1679836572::0::1::::<><>::res://Scripts/Obstacle.gd
-Obstacle_move.tscn::PackedScene::5313186439369816866::1679859013::0::1::::<><>::res://Scripts/Obstacle_move.gd<>uid://df2b5yyb3f7vs
-Player.tscn::PackedScene::2880680439860288485::1679834969::0::1::::<><>::res://Scripts/Player.gd<>uid://dfn6qhj457pqa
+MenuScene.tscn::PackedScene::8734321889423053299::1679864324::0::1::::<><>::res://Scripts/MenuScene.gd<>uid://dhdqyf5owdwqg<>uid://bh0i10njc1ht2<>uid://b6wduc5ref8n0<>uid://e17wbaglslul
+Obstacle.tscn::PackedScene::7131744192173821048::1679864324::0::1::::<><>::res://Scripts/Obstacle.gd
+Obstacle_move.tscn::PackedScene::5313186439369816866::1679864324::0::1::::<><>::res://Scripts/Obstacle_move.gd<>uid://df2b5yyb3f7vs
+Player.tscn::PackedScene::2880680439860288485::1679864324::0::1::::<><>::res://Scripts/Player.gd<>uid://dfn6qhj457pqa
+Portal 2 Finale.ogg::AudioStreamOggVorbis::1453952615596535331::1679864030::1679864315::1::::<><>::
+Portal Button Sound.ogg::AudioStreamOggVorbis::4607909166086632799::1679864030::1679864201::1::::<><>::
+Portal Radio Tune.ogg::AudioStreamOggVorbis::336411480203501535::1679864030::1679864201::1::::<><>::
 portal.ttf::FontFile::2929885533173314317::1679834969::1679834969::1::::<><>::
 README.md::TextFile::-1::1679834969::0::1::::<><>::
-::res://assets/::1679835719
+::res://assets/::1679865085
 cube.png::CompressedTexture2D::7538954362476164636::1679834969::1679834994::1::::<><>::
+event_journee-portes-ouvertes-a-epitech-nancy_247_808858.jpg::CompressedTexture2D::2891711816207349715::1679865085::1679865089::1::::<><>::
 fond noir.jpg::CompressedTexture2D::9221493121741596826::1679834969::1679834969::1::::<><>::
 portail-sprit-vert.webp::CompressedTexture2D::849011896515042973::1679834969::1679834969::1::::<><>::
 portail-sprit-violet.webp::CompressedTexture2D::6394627982710345420::1679834969::1679834969::1::::<><>::
@@ -22,10 +27,10 @@ sprit-player.jpg::CompressedTexture2D::5307904933197111939::1679834969::16798349
 sprite tourelle 2.png::CompressedTexture2D::7566060057157788900::1679835323::1679835719::1::::<><>::
 ::res://default/::1679834969
 defaukt.png::CompressedTexture2D::1296234079747779879::1679834969::1679834969::1::::<><>::
-::res://Scripts/::1679860260
+::res://Scripts/::1679864237
 GameScene.gd::GDScript::-1::1679834969::0::1::::<>Node<>::
-Map.gd::GDScript::-1::1679860260::0::1::::<>Node<>::
-MenuScene.gd::GDScript::-1::1679834969::0::1::::<>Node<>::
-Obstacle.gd::GDScript::-1::1679836311::0::1::::<>Area2D<>::
-Obstacle_move.gd::GDScript::-1::1679859013::0::1::::<>Area2D<>::
-Player.gd::GDScript::-1::1679834969::0::1::::<>CharacterBody2D<>::
+Map.gd::GDScript::-1::1679861260::0::1::::<>Node<>::
+MenuScene.gd::GDScript::-1::1679864030::0::1::::<>Node<>::
+Obstacle.gd::GDScript::-1::1679864030::0::1::::<>Area2D<>::
+Obstacle_move.gd::GDScript::-1::1679864237::0::1::::<>Area2D<>::
+Player.gd::GDScript::-1::1679864186::0::1::::<>CharacterBody2D<>::
