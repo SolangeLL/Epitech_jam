@@ -1,10 +1,9 @@
-extends KinematicBody2D
+extends CharacterBody2D
 
 var run_speed = 350
 var jump_speed = -300
 var gravity = 1700
 
-var velocity = Vector2()
 var jumping = false
 
 func get_input():
@@ -31,5 +30,8 @@ func _physics_process(delta):
 	velocity.y += gravity * delta
 	if jumping and is_on_floor():
 		jumping = false
-	velocity = move_and_slide(velocity, Vector2(0, 1))
+	set_velocity(velocity)
+	set_up_direction(Vector2(0, 1))
+	move_and_slide()
+	velocity = velocity
 	pass

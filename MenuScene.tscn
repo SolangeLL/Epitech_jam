@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dwo8agi72jcsp"]
 
 [ext_resource type="Script" path="res://Scripts/MenuScene.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://cpbg28tq7dx5p" path="res://maxresdefault.jpg" id="2_8octy"]
+[ext_resource type="Texture2D" uid="uid://dhdqyf5owdwqg" path="res://maxresdefault.jpg" id="2_8octy"]
 [ext_resource type="FontFile" uid="uid://bh0i10njc1ht2" path="res://portal.ttf" id="3_l4xmm"]
 
 [node name="MenuScene" type="Node"]

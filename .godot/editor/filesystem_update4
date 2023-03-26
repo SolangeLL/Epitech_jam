@@ -1,0 +1,5 @@
+res://default_env.tres
+res://Main.tscn
+res://Map.tscn
+res://Scripts/Player.gd
+res://MenuScene.tscn
