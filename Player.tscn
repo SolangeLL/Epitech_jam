@@ -16,5 +16,3 @@ texture = ExtResource("2_ubdyr")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_sk0em")
-
-[node name="GravityDirection" type="RayCast2D" parent="."]
