@@ -7,3 +7,4 @@ res://Obstacle.tscn
 res://Obstacle_move.tscn
 res://GameScene.tscn
 res://Player.tscn
+res://Scripts/Player.gd

@@ -254,6 +254,3 @@ shape = SubResource("1")
 scale = Vector2(0.246094, 0.246094)
 sprite_frames = SubResource("SpriteFrames_jym70")
 frame_progress = 0.432202
-
-[node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(1213, 2)

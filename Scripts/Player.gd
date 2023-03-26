@@ -53,3 +53,6 @@ func _physics_process(delta):
 	if is_on_floor() or is_on_ceiling():
 		rotation_deg = 0
 	pass
+
+func die():
+	global_position = Vector2(220,213)
