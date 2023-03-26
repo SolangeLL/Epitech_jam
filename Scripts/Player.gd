@@ -20,6 +20,10 @@ func get_input():
 		run_speed += 100
 	if debug2:
 		run_speed -= 100
+	var input = Input.is_action_pressed("close window")
+	
+	if input == true:
+		get_tree().quit()
 
 	if jump and (is_on_floor() or is_on_ceiling()):
 		velocity.y = jump_speed

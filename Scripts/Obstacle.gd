@@ -4,7 +4,9 @@ extends Area2D
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-
+func _process(delta):
+	if $music.playing == false:
+		$music.play()
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -17,3 +19,4 @@ func _on_Turret_body_entered(body):
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+"res://default_env.tres"
