@@ -1,8 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://c56vq5rm3a4yl"]
+[gd_scene load_steps=6 format=3]
 
 [ext_resource type="Script" path="res://Scripts/Map.gd" id="1_6ust5"]
-[ext_resource type="Texture2D" uid="uid://3nqrihdw1fgt" path="res://assets/sol & plafond sprite.jpg" id="1_rvmlj"]
-[ext_resource type="Texture2D" uid="uid://bhg1cohvv5ft0" path="res://assets/event_journee-portes-ouvertes-a-epitech-nancy_247_808858.jpg" id="3_v0684"]
+[ext_resource type="Texture2D" uid="uid://3nqrihdw1fgt" path="res://assets/img/sol & plafond sprite.jpg" id="1_rvmlj"]
+[ext_resource type="Texture2D" uid="uid://bhg1cohvv5ft0" path="res://assets/img/event_journee-portes-ouvertes-a-epitech-nancy_247_808858.jpg" id="3_v0684"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_6t8py"]
 size = Vector2(1020, 170)

@@ -1,10 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://dwo8agi72jcsp"]
+[gd_scene load_steps=7 format=3]
 
 [ext_resource type="Script" path="res://Scripts/MenuScene.gd" id="1"]
-[ext_resource type="Texture2D" uid="uid://dhdqyf5owdwqg" path="res://maxresdefault.jpg" id="2_8octy"]
-[ext_resource type="FontFile" uid="uid://bh0i10njc1ht2" path="res://portal.ttf" id="3_l4xmm"]
-[ext_resource type="AudioStream" uid="uid://b6wduc5ref8n0" path="res://Portal Button Sound.ogg" id="4_163sb"]
-[ext_resource type="AudioStream" uid="uid://e17wbaglslul" path="res://Portal Radio Tune.ogg" id="5_abmem"]
+[ext_resource type="Texture2D" uid="uid://dhdqyf5owdwqg" path="res://assets/img/maxresdefault.jpg" id="2_8octy"]
+[ext_resource type="FontFile" uid="uid://bh0i10njc1ht2" path="res://assets/fonts/portal.ttf" id="3_l4xmm"]
+[ext_resource type="AudioStream" uid="uid://b6wduc5ref8n0" path="res://assets/sounds/Portal Button Sound.ogg" id="4_163sb"]
+[ext_resource type="AudioStream" uid="uid://e17wbaglslul" path="res://assets/sounds/Portal Radio Tune.ogg" id="5_abmem"]
 
 [sub_resource type="GDScript" id="GDScript_32ymu"]
 script/source = "extends Button

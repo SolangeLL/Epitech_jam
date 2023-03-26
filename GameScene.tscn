@@ -1,13 +1,27 @@
-[gd_scene load_steps=6 format=3 uid="uid://bts54ylbl31ti"]
+[gd_scene load_steps=7 format=3 uid="uid://71ep0rgnwelw"]
 
-[ext_resource type="PackedScene" uid="uid://bhbonegibjfo4" path="res://Player.tscn" id="1"]
-[ext_resource type="Script" path="res://GameScene.gd" id="1_fp0yu"]
-[ext_resource type="PackedScene" uid="uid://c56vq5rm3a4yl" path="res://Map.tscn" id="2_5gtcb"]
-[ext_resource type="AudioStream" uid="uid://uyknfsxqkev0" path="res://Portal 2 Finale.ogg" id="3_j0v3a"]
+[ext_resource type="PackedScene" uid="uid://dd6jqvn8wxobv" path="res://Player.tscn" id="1"]
+[ext_resource type="PackedScene" path="res://Map.tscn" id="2_5gtcb"]
+[ext_resource type="AudioStream" uid="uid://uyknfsxqkev0" path="res://assets/sounds/Portal 2 Finale.ogg" id="4_wiaed"]
 [ext_resource type="PackedScene" uid="uid://chx0n0qfex7h3" path="res://Obstacle_move.tscn" id="5_kivhh"]
+[ext_resource type="PackedScene" uid="uid://c8uw1xldccfau" path="res://Box.tscn" id="5_t35h8"]
+
+[sub_resource type="GDScript" id="GDScript_d6e8k"]
+script/source = "extends Node
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	$music.play()
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
 
 [node name="GameScene" type="Node"]
-script = ExtResource("1_fp0yu")
+script = SubResource("GDScript_d6e8k")
 
 [node name="Map" parent="." instance=ExtResource("2_5gtcb")]
 
@@ -15,1596 +29,1652 @@ script = ExtResource("1_fp0yu")
 position = Vector2(87, 194)
 
 [node name="music" type="AudioStreamPlayer2D" parent="."]
-stream = ExtResource("3_j0v3a")
+stream = ExtResource("4_wiaed")
 
-[node name="Turret" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turrets" type="Node2D" parent="."]
+
+[node name="Turret" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(1110, 429)
 
-[node name="Turret2" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret2" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(1704, 429)
 
-[node name="Turret3" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret3" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(981, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret4" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret4" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(1575, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret5" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret5" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(1850, 429)
 
-[node name="Turret6" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret6" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(2444, 429)
 
-[node name="Turret11" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret11" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(2522, 429)
 
-[node name="Turret10" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret10" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(2349, 429)
 
-[node name="Turret7" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret7" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(1721, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret59" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret59" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(1704, 429)
 
-[node name="Turret60" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret60" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(1575, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret61" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret61" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(1850, 429)
 
-[node name="Turret62" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret62" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(1721, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret63" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret63" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(5268, 429)
 
-[node name="Turret64" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret64" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(5139, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret65" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret65" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(5414, 429)
 
-[node name="Turret66" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret66" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(5285, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret67" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret67" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(5268, 429)
 
-[node name="Turret71" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret71" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(4933, 429)
 
-[node name="Turret72" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret72" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(4661, 429)
 
-[node name="Turret68" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret68" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(5139, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret69" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret69" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(5414, 429)
 
-[node name="Turret73" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret73" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(6392, 429)
 
-[node name="Turret74" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret74" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(6530, 429)
 
-[node name="Turret75" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(6700, 429)
-
-[node name="Turret76" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret76" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(6870, 429)
 
-[node name="Turret77" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret77" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(7040, 429)
 
-[node name="Turret78" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret78" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(6247, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret79" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret79" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(6385, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret80" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret80" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(6555, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret81" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret81" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(6725, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret82" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(6895, 218)
-rotation = 3.14159
-
-[node name="Turret83" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret83" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(7193, 429)
 
-[node name="Turret84" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret84" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(7331, 429)
 
-[node name="Turret85" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(7501, 429)
-
-[node name="Turret86" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret86" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(7671, 429)
 
-[node name="Turret87" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret87" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(7841, 429)
 
-[node name="Turret88" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(7048, 218)
-rotation = 3.14159
-
-[node name="Turret89" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret89" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(7186, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret90" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret90" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(7356, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret91" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(7526, 218)
-rotation = 3.14159
-
-[node name="Turret92" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(7696, 218)
-rotation = 3.14159
-
-[node name="Turret70" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret70" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(5285, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret8" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret8" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(2315, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret9" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret9" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(2551, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret40" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret40" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(3301, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret41" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret41" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(3537, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret51" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret51" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(3817, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret52" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret52" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(4053, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret53" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret53" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(3937, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret54" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret54" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(4173, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret55" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret55" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(4631, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret56" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret56" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(4867, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret57" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret57" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(4751, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret58" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret58" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(4987, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret12" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret12" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(2846, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret13" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret13" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(2893, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret14" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret14" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(2940, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret42" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret42" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(3379, 429)
 
-[node name="Turret43" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(3426, 429)
-
-[node name="Turret44" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret44" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(3473, 429)
 
-[node name="Turret45" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret45" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(4048, 429)
 
-[node name="Turret46" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret46" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(4095, 429)
 
-[node name="Turret47" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret47" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(4142, 429)
 
-[node name="Turret48" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(4281, 429)
-
-[node name="Turret49" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(4328, 429)
-
-[node name="Turret50" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(4375, 429)
-
-[node name="Turret141" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret141" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13176, 449)
 
-[node name="Turret142" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret142" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13223, 449)
 
-[node name="Turret143" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret143" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13270, 449)
 
-[node name="Turret144" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret144" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13317, 449)
 
-[node name="Turret145" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret145" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13364, 449)
 
-[node name="Turret146" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret146" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13411, 449)
 
-[node name="Turret147" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret147" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13458, 449)
 
-[node name="Turret148" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret148" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13505, 449)
 
-[node name="Turret149" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret149" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13552, 449)
 
-[node name="Turret150" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret150" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13599, 449)
 
-[node name="Turret151" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret151" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13646, 449)
 
-[node name="Turret152" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret152" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13693, 449)
 
-[node name="Turret153" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret153" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13740, 449)
 
-[node name="Turret154" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret154" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13787, 449)
 
-[node name="Turret155" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret155" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13834, 449)
 
-[node name="Turret156" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret156" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13881, 449)
 
-[node name="Turret157" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret157" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13928, 449)
 
-[node name="Turret158" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret158" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13975, 449)
 
-[node name="Turret159" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret159" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(14022, 449)
 
-[node name="Turret160" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret160" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(14069, 449)
 
-[node name="Turret161" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret161" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(14116, 449)
 
-[node name="Turret162" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret162" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(14163, 449)
 
-[node name="Turret163" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret163" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(14210, 449)
 
-[node name="Turret164" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret164" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(14257, 449)
 
-[node name="Turret165" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret165" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13176, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret166" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret166" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13223, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret167" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret167" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13270, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret168" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret168" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13317, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret169" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret169" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13364, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret170" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret170" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13411, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret171" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret171" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13458, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret172" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret172" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13505, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret173" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret173" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13552, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret174" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret174" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13599, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret175" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret175" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13646, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret176" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret176" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13693, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret177" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret177" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13740, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret178" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret178" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13787, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret179" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret179" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13834, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret180" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret180" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13881, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret181" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret181" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13928, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret182" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret182" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(13975, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret183" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret183" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(14022, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret184" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret184" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(14069, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret185" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret185" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(14116, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret186" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret186" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(14163, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret187" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret187" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(14210, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret188" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret188" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(14257, 198)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret39" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret39" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(2894, 429)
 
-[node name="Turret93" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret93" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(8290, 429)
 
-[node name="Turret94" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret94" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(8884, 429)
 
-[node name="Turret95" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret95" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(8161, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret96" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret96" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(8755, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret97" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret97" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(9030, 429)
 
-[node name="Turret98" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret98" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(9624, 429)
 
-[node name="Turret99" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(9702, 429)
-
-[node name="Turret100" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret100" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(9529, 429)
 
-[node name="Turret101" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret101" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(8901, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret102" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret102" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(8884, 429)
 
-[node name="Turret103" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret103" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(8755, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret104" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret104" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(9030, 429)
 
-[node name="Turret105" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret105" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(8901, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret106" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret106" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(12448, 429)
 
-[node name="Turret107" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(12319, 218)
-rotation = 3.14159
-
-[node name="Turret108" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret108" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(12594, 429)
 
-[node name="Turret109" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(12465, 218)
-rotation = 3.14159
-
-[node name="Turret110" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret110" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(12448, 429)
 
-[node name="Turret111" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret111" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(12113, 429)
 
-[node name="Turret112" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret112" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(11841, 429)
 
-[node name="Turret113" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(12319, 218)
-rotation = 3.14159
-
-[node name="Turret114" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret114" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(12594, 429)
 
-[node name="Turret115" parent="." instance=ExtResource("5_kivhh")]
-position = Vector2(12465, 218)
-rotation = 3.14159
-
-[node name="Turret116" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret116" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(9495, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret117" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret117" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(9731, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret118" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret118" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(10481, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret119" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret119" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(10717, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret120" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret120" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(10997, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret121" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret121" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(11233, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret122" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret122" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(11117, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret123" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret123" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(11353, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret124" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret124" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(11811, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret125" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret125" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(12047, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret126" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret126" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(11931, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret127" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret127" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(12167, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret128" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret128" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(10026, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret129" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret129" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(10073, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret130" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret130" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(10120, 218)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret131" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret131" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(10559, 429)
 
-[node name="Turret132" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret132" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(10606, 429)
 
-[node name="Turret133" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret133" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(10653, 429)
 
-[node name="Turret134" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret134" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(11228, 429)
 
-[node name="Turret135" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret135" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(11275, 429)
 
-[node name="Turret136" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret136" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(11322, 429)
 
-[node name="Turret137" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret137" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(11461, 429)
 
-[node name="Turret138" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret138" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(11508, 429)
 
-[node name="Turret139" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret139" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(11555, 429)
 
-[node name="Turret140" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret140" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(10074, 429)
 
-[node name="Turret189" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret189" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(18051, 778)
 
-[node name="Turret190" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret190" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(18645, 778)
 
-[node name="Turret191" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret191" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(17922, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret192" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret192" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(18516, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret193" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret193" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(18791, 778)
 
-[node name="Turret194" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret194" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(19385, 778)
 
-[node name="Turret195" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret195" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(19463, 778)
 
-[node name="Turret196" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret196" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(19290, 778)
 
-[node name="Turret197" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret197" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(18662, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret198" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret198" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(18645, 778)
 
-[node name="Turret199" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret199" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(18516, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret200" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret200" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(18791, 778)
 
-[node name="Turret201" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret201" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(18662, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret202" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret202" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(22209, 778)
 
-[node name="Turret203" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret203" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(22080, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret204" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret204" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(22355, 778)
 
-[node name="Turret205" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret205" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(22226, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret206" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret206" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(22209, 778)
 
-[node name="Turret207" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret207" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(21874, 778)
 
-[node name="Turret208" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret208" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(21602, 778)
 
-[node name="Turret209" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret209" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(22080, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret210" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret210" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(22355, 778)
 
-[node name="Turret211" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret211" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(23333, 778)
 
-[node name="Turret212" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret212" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(23471, 778)
 
-[node name="Turret213" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret213" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(23641, 778)
 
-[node name="Turret214" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret214" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(23811, 778)
 
-[node name="Turret215" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret215" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(23981, 778)
 
-[node name="Turret216" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret216" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(23188, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret217" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret217" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(23326, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret218" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret218" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(23496, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret219" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret219" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(23666, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret220" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret220" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(23836, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret221" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret221" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(24134, 778)
 
-[node name="Turret222" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret222" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(24272, 778)
 
-[node name="Turret223" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret223" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(24442, 778)
 
-[node name="Turret224" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret224" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(24612, 778)
 
-[node name="Turret225" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret225" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(24782, 778)
 
-[node name="Turret226" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret226" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(23989, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret227" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret227" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(24127, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret228" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret228" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(24297, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret229" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret229" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(24467, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret230" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret230" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(24637, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret231" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret231" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(22226, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret232" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret232" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(19256, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret233" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret233" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(19492, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret234" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret234" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(20242, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret235" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret235" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(20478, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret236" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret236" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(20758, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret237" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret237" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(20994, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret238" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret238" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(20878, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret239" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret239" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(21114, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret240" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret240" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(21572, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret241" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret241" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(21808, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret242" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret242" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(21692, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret243" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret243" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(21928, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret244" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret244" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(19787, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret245" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret245" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(19834, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret246" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret246" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(19881, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret247" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret247" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(20320, 778)
 
-[node name="Turret248" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret248" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(20367, 778)
 
-[node name="Turret249" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret249" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(20414, 778)
 
-[node name="Turret250" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret250" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(20989, 778)
 
-[node name="Turret251" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret251" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(21036, 778)
 
-[node name="Turret252" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret252" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(21083, 778)
 
-[node name="Turret253" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret253" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(21222, 778)
 
-[node name="Turret254" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret254" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(21269, 778)
 
-[node name="Turret255" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret255" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(21316, 778)
 
-[node name="Turret256" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret256" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30117, 798)
 
-[node name="Turret257" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret257" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30164, 798)
 
-[node name="Turret258" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret258" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30211, 798)
 
-[node name="Turret259" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret259" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30258, 798)
 
-[node name="Turret260" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret260" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30305, 798)
 
-[node name="Turret261" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret261" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30352, 798)
 
-[node name="Turret262" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret262" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30399, 798)
 
-[node name="Turret263" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret263" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30446, 798)
 
-[node name="Turret264" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret264" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30493, 798)
 
-[node name="Turret265" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret265" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30540, 798)
 
-[node name="Turret266" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret266" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30587, 798)
 
-[node name="Turret267" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret267" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30634, 798)
 
-[node name="Turret268" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret268" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30681, 798)
 
-[node name="Turret269" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret269" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30728, 798)
 
-[node name="Turret270" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret270" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30775, 798)
 
-[node name="Turret271" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret271" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30822, 798)
 
-[node name="Turret272" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret272" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30869, 798)
 
-[node name="Turret273" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret273" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30916, 798)
 
-[node name="Turret274" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret274" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30963, 798)
 
-[node name="Turret275" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret275" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(31010, 798)
 
-[node name="Turret276" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret276" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(31057, 798)
 
-[node name="Turret277" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret277" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(31104, 798)
 
-[node name="Turret278" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret278" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(31151, 798)
 
-[node name="Turret279" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret279" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(31198, 798)
 
-[node name="Turret280" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret280" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30117, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret281" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret281" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30164, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret282" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret282" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30211, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret283" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret283" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30258, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret284" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret284" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30305, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret285" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret285" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30352, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret286" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret286" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30399, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret287" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret287" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30446, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret288" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret288" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30493, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret289" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret289" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30540, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret290" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret290" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30587, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret291" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret291" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30634, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret292" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret292" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30681, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret293" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret293" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30728, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret294" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret294" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30775, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret295" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret295" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30822, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret296" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret296" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30869, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret297" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret297" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30916, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret298" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret298" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(30963, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret299" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret299" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(31010, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret300" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret300" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(31057, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret301" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret301" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(31104, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret302" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret302" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(31151, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret303" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret303" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(31198, 547)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret304" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret304" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(19835, 778)
 
-[node name="Turret305" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret305" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(25231, 778)
 
-[node name="Turret306" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret306" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(25825, 778)
 
-[node name="Turret307" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret307" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(25102, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret308" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret308" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(25696, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret309" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret309" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(25971, 778)
 
-[node name="Turret310" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret310" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(26565, 778)
 
-[node name="Turret311" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret311" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(26643, 778)
 
-[node name="Turret312" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret312" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(26470, 778)
 
-[node name="Turret313" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret313" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(25842, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret314" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret314" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(25825, 778)
 
-[node name="Turret315" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret315" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(25696, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret316" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret316" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(25971, 778)
 
-[node name="Turret317" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret317" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(25842, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret318" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret318" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(29389, 778)
 
-[node name="Turret319" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret319" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(29260, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret320" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret320" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(29535, 778)
 
-[node name="Turret321" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret321" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(29406, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret322" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret322" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(29389, 778)
 
-[node name="Turret323" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret323" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(29054, 778)
 
-[node name="Turret324" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret324" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(28782, 778)
 
-[node name="Turret325" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret325" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(29260, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret326" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret326" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(29535, 778)
 
-[node name="Turret327" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret327" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(29406, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret328" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret328" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(26436, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret329" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret329" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(26672, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret330" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret330" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(27422, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret331" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret331" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(27658, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret332" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret332" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(27938, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret333" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret333" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(28174, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret334" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret334" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(28058, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret335" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret335" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(28294, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret336" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret336" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(28752, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret337" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret337" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(28988, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret338" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret338" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(28872, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret339" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret339" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(29108, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret340" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret340" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(26967, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret341" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret341" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(27014, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret342" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret342" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(27061, 567)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret343" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret343" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(27500, 778)
 
-[node name="Turret344" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret344" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(27547, 778)
 
-[node name="Turret345" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret345" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(27594, 778)
 
-[node name="Turret346" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret346" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(28169, 778)
 
-[node name="Turret347" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret347" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(28216, 778)
 
-[node name="Turret348" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret348" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(28263, 778)
 
-[node name="Turret349" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret349" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(28402, 778)
 
-[node name="Turret350" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret350" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(28449, 778)
 
-[node name="Turret351" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret351" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(28496, 778)
 
-[node name="Turret352" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret352" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(27015, 778)
 
-[node name="Turret15" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret15" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35540, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret16" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret16" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35587, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret17" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret17" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35634, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret18" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret18" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35681, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret19" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret19" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35728, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret20" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret20" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35775, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret21" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret21" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35821, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret22" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret22" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35868, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret23" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret23" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35915, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret24" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret24" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35962, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret25" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret25" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36009, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret26" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret26" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36056, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret27" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret27" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36103, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret28" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret28" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36150, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret29" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret29" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36197, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret30" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret30" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36244, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret31" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret31" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36291, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret32" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret32" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36338, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret33" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret33" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36384, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret34" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret34" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36431, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret35" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret35" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36478, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret36" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret36" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36525, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret37" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret37" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36572, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret38" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret38" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36619, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret353" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret353" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35540, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret354" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret354" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35587, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret355" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret355" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35634, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret356" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret356" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35681, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret357" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret357" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35728, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret358" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret358" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35775, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret359" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret359" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35821, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret360" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret360" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35868, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret361" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret361" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35915, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret362" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret362" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35962, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret363" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret363" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36009, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret364" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret364" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36056, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret365" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret365" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36103, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret366" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret366" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36150, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret367" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret367" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36197, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret368" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret368" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36244, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret369" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret369" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36291, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret370" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret370" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36338, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret371" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret371" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36384, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret372" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret372" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36431, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret373" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret373" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36478, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret374" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret374" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36525, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret375" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret375" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36572, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret376" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret376" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36619, -2177)
-rotation = 3.14159
+rotation = -3.14159
 
-[node name="Turret377" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret377" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 1153)
 rotation = -1.5708
 
-[node name="Turret378" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret378" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 1107)
 rotation = -1.5708
 
-[node name="Turret379" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret379" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 1061)
 rotation = -1.5708
 
-[node name="Turret380" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret380" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 1015)
 rotation = -1.5708
 
-[node name="Turret381" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret381" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 969)
 rotation = -1.5708
 
-[node name="Turret382" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret382" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 923)
 rotation = -1.5708
 
-[node name="Turret383" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret383" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 877)
 rotation = -1.5708
 
-[node name="Turret384" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret384" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 831)
 rotation = -1.5708
 
-[node name="Turret385" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret385" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 785)
 rotation = -1.5708
 
-[node name="Turret386" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret386" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 739)
 rotation = -1.5708
 
-[node name="Turret387" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret387" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 693)
 rotation = -1.5708
 
-[node name="Turret388" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret388" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 647)
 rotation = -1.5708
 
-[node name="Turret389" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret389" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 601)
 rotation = -1.5708
 
-[node name="Turret390" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret390" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 555)
 rotation = -1.5708
 
-[node name="Turret391" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret391" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 509)
 rotation = -1.5708
 
-[node name="Turret392" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret392" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 463)
 rotation = -1.5708
 
-[node name="Turret393" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret393" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 417)
 rotation = -1.5708
 
-[node name="Turret394" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret394" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 371)
 rotation = -1.5708
 
-[node name="Turret395" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret395" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 325)
 rotation = -1.5708
 
-[node name="Turret396" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret396" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 279)
 rotation = -1.5708
 
-[node name="Turret397" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret397" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 233)
 rotation = -1.5708
 
-[node name="Turret398" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret398" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 187)
 rotation = -1.5708
 
-[node name="Turret399" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret399" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 141)
 rotation = -1.5708
 
-[node name="Turret400" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret400" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 95)
 rotation = -1.5708
 
-[node name="Turret401" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret401" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 49)
 rotation = -1.5708
 
-[node name="Turret402" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret402" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, 3)
 rotation = -1.5708
 
-[node name="Turret403" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret403" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -43)
 rotation = -1.5708
 
-[node name="Turret404" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret404" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -89)
 rotation = -1.5708
 
-[node name="Turret405" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret405" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -135)
 rotation = -1.5708
 
-[node name="Turret406" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret406" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -181)
 rotation = -1.5708
 
-[node name="Turret407" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret407" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -227)
 rotation = -1.5708
 
-[node name="Turret408" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret408" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -273)
 rotation = -1.5708
 
-[node name="Turret409" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret409" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -319)
 rotation = -1.5708
 
-[node name="Turret410" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret410" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -365)
 rotation = -1.5708
 
-[node name="Turret411" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret411" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -411)
 rotation = -1.5708
 
-[node name="Turret412" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret412" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -457)
 rotation = -1.5708
 
-[node name="Turret413" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret413" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -503)
 rotation = -1.5708
 
-[node name="Turret414" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret414" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -549)
 rotation = -1.5708
 
-[node name="Turret415" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret415" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -595)
 rotation = -1.5708
 
-[node name="Turret416" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret416" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -641)
 rotation = -1.5708
 
-[node name="Turret417" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret417" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -687)
 rotation = -1.5708
 
-[node name="Turret418" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret418" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -733)
 rotation = -1.5708
 
-[node name="Turret419" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret419" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -779)
 rotation = -1.5708
 
-[node name="Turret420" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret420" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -825)
 rotation = -1.5708
 
-[node name="Turret421" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret421" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -871)
 rotation = -1.5708
 
-[node name="Turret422" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret422" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -917)
 rotation = -1.5708
 
-[node name="Turret423" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret423" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -963)
 rotation = -1.5708
 
-[node name="Turret424" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret424" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1009)
 rotation = -1.5708
 
-[node name="Turret425" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret425" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1055)
 rotation = -1.5708
 
-[node name="Turret426" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret426" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1101)
 rotation = -1.5708
 
-[node name="Turret427" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret427" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1147)
 rotation = -1.5708
 
-[node name="Turret428" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret428" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1193)
 rotation = -1.5708
 
-[node name="Turret429" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret429" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1239)
 rotation = -1.5708
 
-[node name="Turret430" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret430" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1285)
 rotation = -1.5708
 
-[node name="Turret431" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret431" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1331)
 rotation = -1.5708
 
-[node name="Turret432" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret432" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1377)
 rotation = -1.5708
 
-[node name="Turret433" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret433" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1423)
 rotation = -1.5708
 
-[node name="Turret434" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret434" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1469)
 rotation = -1.5708
 
-[node name="Turret435" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret435" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1515)
 rotation = -1.5708
 
-[node name="Turret436" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret436" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1561)
 rotation = -1.5708
 
-[node name="Turret437" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret437" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1607)
 rotation = -1.5708
 
-[node name="Turret438" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret438" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1653)
 rotation = -1.5708
 
-[node name="Turret439" parent="." instance=ExtResource("5_kivhh")]
+[node name="Turret439" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(36490, -1699)
 rotation = -1.5708
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="Box" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(1165, 456)
+
+[node name="Box2" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(1234, 191)
+
+[node name="Box3" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(1277, 191)
+
+[node name="Box4" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(1277, 233)
+
+[node name="Box6" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(2033, 191)
+
+[node name="Box7" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(2076, 191)
+
+[node name="Box8" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(2076, 233)
+
+[node name="Box9" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(2623, 456)
+
+[node name="Box10" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(2812, 456)
+
+[node name="Box11" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(3427, 456)
+
+[node name="Box12" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(4283, 456)
+
+[node name="Box13" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(4326, 456)
+
+[node name="Box14" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(4368, 456)
+
+[node name="Box15" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(4411, 456)
+
+[node name="Box16" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(5673, 456)
+
+[node name="Box17" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(5717, 456)
+
+[node name="Box18" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(5717, 414)
+
+[node name="Box19" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(6692, 456)
+
+[node name="Box20" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(6892, 191)
+
+[node name="Box21" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(7041, 190)
+
+[node name="Box22" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(7041, 232)
+
+[node name="Box23" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(7493, 456)
+
+[node name="Box24" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(7527, 191)
+
+[node name="Box25" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(7527, 233)
+
+[node name="Box26" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(7569, 233)
+
+[node name="Box27" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(7569, 191)
+
+[node name="Box28" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(7739, 233)
+
+[node name="Box29" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(7739, 191)
+
+[node name="Box5" parent="Node2D" instance=ExtResource("5_t35h8")]
+position = Vector2(1410, 456)
+
+[node name="Box16" parent="." instance=ExtResource("5_t35h8")]
+position = Vector2(7939, 456)
+
+[node name="Box17" parent="." instance=ExtResource("5_t35h8")]
+position = Vector2(7983, 456)
+
+[node name="Box18" parent="." instance=ExtResource("5_t35h8")]
+position = Vector2(7983, 414)
+
+[node name="Box19" parent="." instance=ExtResource("5_t35h8")]
+position = Vector2(12314, 191)
+
+[node name="Box21" parent="." instance=ExtResource("5_t35h8")]
+position = Vector2(12356, 191)
+
+[node name="Box20" parent="." instance=ExtResource("5_t35h8")]
+position = Vector2(12314, 233)

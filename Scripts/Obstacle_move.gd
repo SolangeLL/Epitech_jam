@@ -13,6 +13,4 @@ func _process(delta):
 
 func _on_body_entered(body):
 	if body.is_in_group("Player"):
-		print("coucou")
 		body.die()
-	pass # Replace with function body.

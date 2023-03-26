@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://c8uw1xldccfau"]
+
+[ext_resource type="Script" path="res://Scripts/Box.gd" id="1_20rfd"]
+[ext_resource type="Texture2D" uid="uid://ddeml78tntuow" path="res://assets/img/box.png" id="1_jrn2k"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o1tkb"]
+size = Vector2(42, 42)
+
+[node name="Box" type="Area2D"]
+script = ExtResource("1_20rfd")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.120879, 0.120879)
+texture = ExtResource("1_jrn2k")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_o1tkb")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

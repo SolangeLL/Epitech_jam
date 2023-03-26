@@ -32,8 +32,10 @@ func get_input():
 		get_tree().quit()
 
 	if jump and (is_on_floor() or is_on_ceiling()):
+		$Jump.play()
 		velocity.y = jump_speed
 	if revert:
+		$SwitchGravitySound.play()
 		gravity *= -1
 		jump_speed *= -1
 	if right:
@@ -53,8 +55,6 @@ func _physics_process(delta):
 	var normal = get_floor_normal()
 	$Sprite2D.rotation = normal.angle()
 	if !is_on_floor() and !is_on_ceiling() and rotation_deg < 90:
-		if $jump.playing == false:
-			$jump.play()
 		rotation_deg += 0.15
 		$Sprite2D.rotation += rotation_deg
 	if is_on_floor() or is_on_ceiling():
@@ -63,4 +63,5 @@ func _physics_process(delta):
 
 func die():
 	if can_die:
+		$DieSound.play()
 		global_position = Vector2(220,213)

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://5qjjkkgysldn"
+path="res://.godot/imported/Portal Tick Tack.ogg-0a0d04577adf7b1759100e13522115ff.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Portal Tick Tack.ogg"
+dest_files=["res://.godot/imported/Portal Tick Tack.ogg-0a0d04577adf7b1759100e13522115ff.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

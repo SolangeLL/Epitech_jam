@@ -1,5 +1,7 @@
+Node2D
 CollisionShape2D
 Sprite2D
+AudioStreamPlayer
 Camera2D
 CollisionPolygon2D
 Marker2D

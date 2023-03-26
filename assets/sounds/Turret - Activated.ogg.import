@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ba4db0rp8hyws"
+path="res://.godot/imported/Turret - Activated.ogg-5065912f51967a3d8cf0ac6a90df2b8e.oggvorbisstr"
+
+[deps]
+
+source_file="res://assets/sounds/Turret - Activated.ogg"
+dest_files=["res://.godot/imported/Turret - Activated.ogg-5065912f51967a3d8cf0ac6a90df2b8e.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
