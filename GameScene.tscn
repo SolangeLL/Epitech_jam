@@ -1,11 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://bts54ylbl31ti"]
+[gd_scene load_steps=5 format=3 uid="uid://bts54ylbl31ti"]
 
 [ext_resource type="PackedScene" uid="uid://bhbonegibjfo4" path="res://Player.tscn" id="1"]
+[ext_resource type="Script" path="res://GameScene.gd" id="1_fp0yu"]
 [ext_resource type="PackedScene" uid="uid://c56vq5rm3a4yl" path="res://Map.tscn" id="2_5gtcb"]
+[ext_resource type="AudioStream" uid="uid://uyknfsxqkev0" path="res://Portal 2 Finale.ogg" id="3_j0v3a"]
 
 [node name="GameScene" type="Node"]
+script = ExtResource("1_fp0yu")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1")]
 position = Vector2(18, 123)
 
 [node name="Map" parent="." instance=ExtResource("2_5gtcb")]
+
+[node name="music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_j0v3a")

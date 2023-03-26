@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://b6wduc5ref8n0"
+path="res://.godot/imported/Portal Button Sound.ogg-248b1cb6bf7cc45d9cf13ec38856f1fb.oggvorbisstr"
+
+[deps]
+
+source_file="res://Portal Button Sound.ogg"
+dest_files=["res://.godot/imported/Portal Button Sound.ogg-248b1cb6bf7cc45d9cf13ec38856f1fb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
