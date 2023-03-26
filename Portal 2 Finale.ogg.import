@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/Portal 2 Finale.ogg-9e5a742712c97c0faab25a737
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

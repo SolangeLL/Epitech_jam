@@ -12,5 +12,6 @@ script = ExtResource("1_fp0yu")
 
 [node name="CharacterBody2D" parent="." instance=ExtResource("1")]
 position = Vector2(87, 194)
+
 [node name="music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("3_j0v3a")
