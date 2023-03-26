@@ -1,13 +1,13 @@
 [gd_scene load_steps=3 format=3 uid="uid://clxk7ibek31yl"]
 
-[ext_resource type="Texture2D" uid="uid://sp51yrpsc6vr" path="res://default/defaukt.png" id="1"]
-
 [sub_resource type="CapsuleShape2D" id="1"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jym70"]
 
 [node name="Obstacle_move" type="Area2D"]
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1")
-
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jym70")

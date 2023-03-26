@@ -1,3 +1,21 @@
 [gd_scene format=3 uid="uid://c56vq5rm3a4yl"]
 
 [node name="Map" type="Node"]
+
+[node name="UpFloor" type="StaticBody2D" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="UpFloor"]
+color = Color(0.054902, 0.109804, 0.670588, 1)
+polygon = PackedVector2Array(-11, 44, 534, 10, 1116, 65, 1041, -79, -58, -32)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="UpFloor"]
+polygon = PackedVector2Array(-7, 37, 529, 1, 1112, 56, 1037, -80, -62, -35, -13, 37)
+
+[node name="DownFloor" type="StaticBody2D" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="DownFloor"]
+color = Color(0.054902, 0.333333, 0.0784314, 1)
+polygon = PackedVector2Array(79, 380, 1042, 379, 1040, 601, -78, 603, -99, 264)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="DownFloor"]
+polygon = PackedVector2Array(-92, 260, 74, 378, 1043, 381, 1032, 598, -74, 600)
