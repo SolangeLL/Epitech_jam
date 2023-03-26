@@ -1,7 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://bhbonegibjfo4"]
+[gd_scene load_steps=5 format=3 uid="uid://bhbonegibjfo4"]
 
 [ext_resource type="Script" path="res://Scripts/Player.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://dfn6qhj457pqa" path="res://assets/cube.png" id="2_ubdyr"]
+[ext_resource type="AudioStream" uid="uid://cmvu7q3lhbf2s" path="res://Jump Sound Effect.ogg" id="3_vha2i"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_sk0em"]
 size = Vector2(42, 42)
@@ -20,3 +21,6 @@ shape = SubResource("RectangleShape2D_sk0em")
 
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.7, 1.7)
+
+[node name="jump" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_vha2i")

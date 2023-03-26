@@ -47,6 +47,8 @@ func _physics_process(delta):
 	var normal = get_floor_normal()
 	$Sprite2D.rotation = normal.angle()
 	if !is_on_floor() and !is_on_ceiling() and rotation_deg < 90:
+		if $jump.playing == false:
+			$jump.play()
 		print(rotation_deg)
 		rotation_deg += 0.15
 		$Sprite2D.rotation += rotation_deg
