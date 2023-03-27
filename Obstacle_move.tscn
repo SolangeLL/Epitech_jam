@@ -1,7 +1,8 @@
-[gd_scene load_steps=38 format=3 uid="uid://chx0n0qfex7h3"]
+[gd_scene load_steps=39 format=3 uid="uid://chx0n0qfex7h3"]
 
 [ext_resource type="Script" path="res://Scripts/Obstacle_move.gd" id="1_bhsbt"]
 [ext_resource type="Texture2D" uid="uid://df2b5yyb3f7vs" path="res://assets/img/sprite tourelle 2.png" id="2_hwf8u"]
+[ext_resource type="AudioStream" uid="uid://ct5ru7ickllqj" path="res://assets/sounds/alarm.ogg" id="3_ce8jp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_uihii"]
 atlas = ExtResource("2_hwf8u")
@@ -258,4 +259,10 @@ frame_progress = 0.432202
 position = Vector2(-1, 10)
 shape = SubResource("1")
 
+[node name="TurretSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_ce8jp")
+
+[node name="Timer" type="Timer" parent="."]
+
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,10 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://71ep0rgnwelw"]
+[gd_scene load_steps=8 format=3 uid="uid://71ep0rgnwelw"]
 
 [ext_resource type="PackedScene" uid="uid://dd6jqvn8wxobv" path="res://Player.tscn" id="1"]
 [ext_resource type="PackedScene" path="res://Map.tscn" id="2_5gtcb"]
 [ext_resource type="AudioStream" uid="uid://uyknfsxqkev0" path="res://assets/sounds/Portal 2 Finale.ogg" id="4_wiaed"]
 [ext_resource type="PackedScene" uid="uid://chx0n0qfex7h3" path="res://Obstacle_move.tscn" id="5_kivhh"]
 [ext_resource type="PackedScene" uid="uid://c8uw1xldccfau" path="res://Box.tscn" id="5_t35h8"]
+[ext_resource type="Texture2D" uid="uid://cu6ineajsy0m7" path="res://assets/img/cake.png" id="6_u0o87"]
 
 [sub_resource type="GDScript" id="GDScript_d6e8k"]
 script/source = "extends Node
@@ -35,9 +36,6 @@ stream = ExtResource("4_wiaed")
 
 [node name="Turret" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(1110, 429)
-
-[node name="Turret2" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(1704, 429)
 
 [node name="Turret3" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(981, 218)
@@ -554,580 +552,6 @@ position = Vector2(11555, 429)
 [node name="Turret140" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(10074, 429)
 
-[node name="Turret189" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(18051, 778)
-
-[node name="Turret190" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(18645, 778)
-
-[node name="Turret191" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(17922, 567)
-rotation = -3.14159
-
-[node name="Turret192" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(18516, 567)
-rotation = -3.14159
-
-[node name="Turret193" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(18791, 778)
-
-[node name="Turret194" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(19385, 778)
-
-[node name="Turret195" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(19463, 778)
-
-[node name="Turret196" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(19290, 778)
-
-[node name="Turret197" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(18662, 567)
-rotation = -3.14159
-
-[node name="Turret198" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(18645, 778)
-
-[node name="Turret199" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(18516, 567)
-rotation = -3.14159
-
-[node name="Turret200" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(18791, 778)
-
-[node name="Turret201" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(18662, 567)
-rotation = -3.14159
-
-[node name="Turret202" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(22209, 778)
-
-[node name="Turret203" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(22080, 567)
-rotation = -3.14159
-
-[node name="Turret204" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(22355, 778)
-
-[node name="Turret205" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(22226, 567)
-rotation = -3.14159
-
-[node name="Turret206" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(22209, 778)
-
-[node name="Turret207" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(21874, 778)
-
-[node name="Turret208" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(21602, 778)
-
-[node name="Turret209" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(22080, 567)
-rotation = -3.14159
-
-[node name="Turret210" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(22355, 778)
-
-[node name="Turret211" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(23333, 778)
-
-[node name="Turret212" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(23471, 778)
-
-[node name="Turret213" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(23641, 778)
-
-[node name="Turret214" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(23811, 778)
-
-[node name="Turret215" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(23981, 778)
-
-[node name="Turret216" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(23188, 567)
-rotation = -3.14159
-
-[node name="Turret217" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(23326, 567)
-rotation = -3.14159
-
-[node name="Turret218" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(23496, 567)
-rotation = -3.14159
-
-[node name="Turret219" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(23666, 567)
-rotation = -3.14159
-
-[node name="Turret220" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(23836, 567)
-rotation = -3.14159
-
-[node name="Turret221" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(24134, 778)
-
-[node name="Turret222" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(24272, 778)
-
-[node name="Turret223" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(24442, 778)
-
-[node name="Turret224" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(24612, 778)
-
-[node name="Turret225" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(24782, 778)
-
-[node name="Turret226" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(23989, 567)
-rotation = -3.14159
-
-[node name="Turret227" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(24127, 567)
-rotation = -3.14159
-
-[node name="Turret228" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(24297, 567)
-rotation = -3.14159
-
-[node name="Turret229" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(24467, 567)
-rotation = -3.14159
-
-[node name="Turret230" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(24637, 567)
-rotation = -3.14159
-
-[node name="Turret231" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(22226, 567)
-rotation = -3.14159
-
-[node name="Turret232" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(19256, 567)
-rotation = -3.14159
-
-[node name="Turret233" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(19492, 567)
-rotation = -3.14159
-
-[node name="Turret234" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(20242, 567)
-rotation = -3.14159
-
-[node name="Turret235" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(20478, 567)
-rotation = -3.14159
-
-[node name="Turret236" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(20758, 567)
-rotation = -3.14159
-
-[node name="Turret237" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(20994, 567)
-rotation = -3.14159
-
-[node name="Turret238" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(20878, 567)
-rotation = -3.14159
-
-[node name="Turret239" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(21114, 567)
-rotation = -3.14159
-
-[node name="Turret240" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(21572, 567)
-rotation = -3.14159
-
-[node name="Turret241" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(21808, 567)
-rotation = -3.14159
-
-[node name="Turret242" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(21692, 567)
-rotation = -3.14159
-
-[node name="Turret243" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(21928, 567)
-rotation = -3.14159
-
-[node name="Turret244" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(19787, 567)
-rotation = -3.14159
-
-[node name="Turret245" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(19834, 567)
-rotation = -3.14159
-
-[node name="Turret246" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(19881, 567)
-rotation = -3.14159
-
-[node name="Turret247" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(20320, 778)
-
-[node name="Turret248" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(20367, 778)
-
-[node name="Turret249" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(20414, 778)
-
-[node name="Turret250" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(20989, 778)
-
-[node name="Turret251" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(21036, 778)
-
-[node name="Turret252" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(21083, 778)
-
-[node name="Turret253" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(21222, 778)
-
-[node name="Turret254" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(21269, 778)
-
-[node name="Turret255" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(21316, 778)
-
-[node name="Turret256" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30117, 798)
-
-[node name="Turret257" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30164, 798)
-
-[node name="Turret258" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30211, 798)
-
-[node name="Turret259" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30258, 798)
-
-[node name="Turret260" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30305, 798)
-
-[node name="Turret261" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30352, 798)
-
-[node name="Turret262" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30399, 798)
-
-[node name="Turret263" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30446, 798)
-
-[node name="Turret264" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30493, 798)
-
-[node name="Turret265" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30540, 798)
-
-[node name="Turret266" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30587, 798)
-
-[node name="Turret267" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30634, 798)
-
-[node name="Turret268" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30681, 798)
-
-[node name="Turret269" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30728, 798)
-
-[node name="Turret270" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30775, 798)
-
-[node name="Turret271" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30822, 798)
-
-[node name="Turret272" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30869, 798)
-
-[node name="Turret273" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30916, 798)
-
-[node name="Turret274" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30963, 798)
-
-[node name="Turret275" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(31010, 798)
-
-[node name="Turret276" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(31057, 798)
-
-[node name="Turret277" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(31104, 798)
-
-[node name="Turret278" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(31151, 798)
-
-[node name="Turret279" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(31198, 798)
-
-[node name="Turret280" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30117, 547)
-rotation = -3.14159
-
-[node name="Turret281" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30164, 547)
-rotation = -3.14159
-
-[node name="Turret282" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30211, 547)
-rotation = -3.14159
-
-[node name="Turret283" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30258, 547)
-rotation = -3.14159
-
-[node name="Turret284" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30305, 547)
-rotation = -3.14159
-
-[node name="Turret285" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30352, 547)
-rotation = -3.14159
-
-[node name="Turret286" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30399, 547)
-rotation = -3.14159
-
-[node name="Turret287" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30446, 547)
-rotation = -3.14159
-
-[node name="Turret288" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30493, 547)
-rotation = -3.14159
-
-[node name="Turret289" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30540, 547)
-rotation = -3.14159
-
-[node name="Turret290" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30587, 547)
-rotation = -3.14159
-
-[node name="Turret291" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30634, 547)
-rotation = -3.14159
-
-[node name="Turret292" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30681, 547)
-rotation = -3.14159
-
-[node name="Turret293" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30728, 547)
-rotation = -3.14159
-
-[node name="Turret294" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30775, 547)
-rotation = -3.14159
-
-[node name="Turret295" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30822, 547)
-rotation = -3.14159
-
-[node name="Turret296" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30869, 547)
-rotation = -3.14159
-
-[node name="Turret297" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30916, 547)
-rotation = -3.14159
-
-[node name="Turret298" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(30963, 547)
-rotation = -3.14159
-
-[node name="Turret299" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(31010, 547)
-rotation = -3.14159
-
-[node name="Turret300" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(31057, 547)
-rotation = -3.14159
-
-[node name="Turret301" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(31104, 547)
-rotation = -3.14159
-
-[node name="Turret302" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(31151, 547)
-rotation = -3.14159
-
-[node name="Turret303" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(31198, 547)
-rotation = -3.14159
-
-[node name="Turret304" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(19835, 778)
-
-[node name="Turret305" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(25231, 778)
-
-[node name="Turret306" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(25825, 778)
-
-[node name="Turret307" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(25102, 567)
-rotation = -3.14159
-
-[node name="Turret308" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(25696, 567)
-rotation = -3.14159
-
-[node name="Turret309" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(25971, 778)
-
-[node name="Turret310" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(26565, 778)
-
-[node name="Turret311" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(26643, 778)
-
-[node name="Turret312" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(26470, 778)
-
-[node name="Turret313" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(25842, 567)
-rotation = -3.14159
-
-[node name="Turret314" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(25825, 778)
-
-[node name="Turret315" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(25696, 567)
-rotation = -3.14159
-
-[node name="Turret316" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(25971, 778)
-
-[node name="Turret317" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(25842, 567)
-rotation = -3.14159
-
-[node name="Turret318" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(29389, 778)
-
-[node name="Turret319" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(29260, 567)
-rotation = -3.14159
-
-[node name="Turret320" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(29535, 778)
-
-[node name="Turret321" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(29406, 567)
-rotation = -3.14159
-
-[node name="Turret322" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(29389, 778)
-
-[node name="Turret323" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(29054, 778)
-
-[node name="Turret324" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(28782, 778)
-
-[node name="Turret325" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(29260, 567)
-rotation = -3.14159
-
-[node name="Turret326" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(29535, 778)
-
-[node name="Turret327" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(29406, 567)
-rotation = -3.14159
-
-[node name="Turret328" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(26436, 567)
-rotation = -3.14159
-
-[node name="Turret329" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(26672, 567)
-rotation = -3.14159
-
-[node name="Turret330" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(27422, 567)
-rotation = -3.14159
-
-[node name="Turret331" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(27658, 567)
-rotation = -3.14159
-
-[node name="Turret332" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(27938, 567)
-rotation = -3.14159
-
-[node name="Turret333" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(28174, 567)
-rotation = -3.14159
-
-[node name="Turret334" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(28058, 567)
-rotation = -3.14159
-
-[node name="Turret335" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(28294, 567)
-rotation = -3.14159
-
-[node name="Turret336" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(28752, 567)
-rotation = -3.14159
-
-[node name="Turret337" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(28988, 567)
-rotation = -3.14159
-
-[node name="Turret338" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(28872, 567)
-rotation = -3.14159
-
-[node name="Turret339" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(29108, 567)
-rotation = -3.14159
-
-[node name="Turret340" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(26967, 567)
-rotation = -3.14159
-
-[node name="Turret341" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(27014, 567)
-rotation = -3.14159
-
-[node name="Turret342" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(27061, 567)
-rotation = -3.14159
-
-[node name="Turret343" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(27500, 778)
-
-[node name="Turret344" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(27547, 778)
-
-[node name="Turret345" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(27594, 778)
-
-[node name="Turret346" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(28169, 778)
-
-[node name="Turret347" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(28216, 778)
-
-[node name="Turret348" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(28263, 778)
-
-[node name="Turret349" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(28402, 778)
-
-[node name="Turret350" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(28449, 778)
-
-[node name="Turret351" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(28496, 778)
-
-[node name="Turret352" parent="Turrets" instance=ExtResource("5_kivhh")]
-position = Vector2(27015, 778)
-
 [node name="Turret15" parent="Turrets" instance=ExtResource("5_kivhh")]
 position = Vector2(35540, -2177)
 rotation = -3.14159
@@ -1572,109 +996,1337 @@ rotation = -1.5708
 position = Vector2(36490, -1699)
 rotation = -1.5708
 
-[node name="Node2D" type="Node2D" parent="."]
+[node name="Turret2" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(1704, 429)
 
-[node name="Box" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Turret43" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(18028, 778)
+
+[node name="Turret48" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(18622, 778)
+
+[node name="Turret49" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(17899, 567)
+rotation = -3.14159
+
+[node name="Turret50" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(18493, 567)
+rotation = -3.14159
+
+[node name="Turret75" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(18768, 778)
+
+[node name="Turret82" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(19362, 778)
+
+[node name="Turret85" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(19440, 778)
+
+[node name="Turret88" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(19267, 778)
+
+[node name="Turret91" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(18639, 567)
+rotation = -3.14159
+
+[node name="Turret92" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(18622, 778)
+
+[node name="Turret99" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(18493, 567)
+rotation = -3.14159
+
+[node name="Turret107" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(18768, 778)
+
+[node name="Turret109" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(18639, 567)
+rotation = -3.14159
+
+[node name="Turret113" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(22186, 778)
+
+[node name="Turret115" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(22057, 567)
+rotation = -3.14159
+
+[node name="Turret189" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(22332, 778)
+
+[node name="Turret190" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(22203, 567)
+rotation = -3.14159
+
+[node name="Turret191" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(22186, 778)
+
+[node name="Turret192" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(21851, 778)
+
+[node name="Turret193" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(21579, 778)
+
+[node name="Turret194" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(22057, 567)
+rotation = -3.14159
+
+[node name="Turret195" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(22332, 778)
+
+[node name="Turret196" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(23310, 778)
+
+[node name="Turret197" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(23448, 778)
+
+[node name="Turret198" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(23788, 778)
+
+[node name="Turret199" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(23958, 778)
+
+[node name="Turret200" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(23165, 567)
+rotation = -3.14159
+
+[node name="Turret201" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(23303, 567)
+rotation = -3.14159
+
+[node name="Turret202" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(23473, 567)
+rotation = -3.14159
+
+[node name="Turret203" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(23643, 567)
+rotation = -3.14159
+
+[node name="Turret204" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(24111, 778)
+
+[node name="Turret205" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(24249, 778)
+
+[node name="Turret206" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(24589, 778)
+
+[node name="Turret207" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(24759, 778)
+
+[node name="Turret208" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(24104, 567)
+rotation = -3.14159
+
+[node name="Turret209" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(24274, 567)
+rotation = -3.14159
+
+[node name="Turret210" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(22203, 567)
+rotation = -3.14159
+
+[node name="Turret211" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(19233, 567)
+rotation = -3.14159
+
+[node name="Turret212" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(19469, 567)
+rotation = -3.14159
+
+[node name="Turret213" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(20219, 567)
+rotation = -3.14159
+
+[node name="Turret214" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(20455, 567)
+rotation = -3.14159
+
+[node name="Turret215" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(20735, 567)
+rotation = -3.14159
+
+[node name="Turret216" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(20971, 567)
+rotation = -3.14159
+
+[node name="Turret217" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(20855, 567)
+rotation = -3.14159
+
+[node name="Turret218" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(21091, 567)
+rotation = -3.14159
+
+[node name="Turret219" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(21549, 567)
+rotation = -3.14159
+
+[node name="Turret220" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(21785, 567)
+rotation = -3.14159
+
+[node name="Turret221" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(21669, 567)
+rotation = -3.14159
+
+[node name="Turret222" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(21905, 567)
+rotation = -3.14159
+
+[node name="Turret223" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(19764, 567)
+rotation = -3.14159
+
+[node name="Turret224" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(19811, 567)
+rotation = -3.14159
+
+[node name="Turret225" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(19858, 567)
+rotation = -3.14159
+
+[node name="Turret226" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(20297, 778)
+
+[node name="Turret227" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(20391, 778)
+
+[node name="Turret228" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(20966, 778)
+
+[node name="Turret229" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(21013, 778)
+
+[node name="Turret230" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(21060, 778)
+
+[node name="Turret231" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30094, 798)
+
+[node name="Turret232" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30141, 798)
+
+[node name="Turret233" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30188, 798)
+
+[node name="Turret234" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30235, 798)
+
+[node name="Turret235" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30282, 798)
+
+[node name="Turret236" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30329, 798)
+
+[node name="Turret237" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30376, 798)
+
+[node name="Turret238" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30423, 798)
+
+[node name="Turret239" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30470, 798)
+
+[node name="Turret240" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30517, 798)
+
+[node name="Turret241" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30564, 798)
+
+[node name="Turret242" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30611, 798)
+
+[node name="Turret243" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30658, 798)
+
+[node name="Turret244" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30705, 798)
+
+[node name="Turret245" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30752, 798)
+
+[node name="Turret246" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30799, 798)
+
+[node name="Turret247" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30846, 798)
+
+[node name="Turret248" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30893, 798)
+
+[node name="Turret249" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30940, 798)
+
+[node name="Turret250" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30987, 798)
+
+[node name="Turret251" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(31034, 798)
+
+[node name="Turret252" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(31081, 798)
+
+[node name="Turret253" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(31128, 798)
+
+[node name="Turret254" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(31175, 798)
+
+[node name="Turret255" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30094, 547)
+rotation = -3.14159
+
+[node name="Turret256" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30141, 547)
+rotation = -3.14159
+
+[node name="Turret257" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30188, 547)
+rotation = -3.14159
+
+[node name="Turret258" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30235, 547)
+rotation = -3.14159
+
+[node name="Turret259" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30282, 547)
+rotation = -3.14159
+
+[node name="Turret260" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30329, 547)
+rotation = -3.14159
+
+[node name="Turret261" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30376, 547)
+rotation = -3.14159
+
+[node name="Turret262" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30423, 547)
+rotation = -3.14159
+
+[node name="Turret263" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30470, 547)
+rotation = -3.14159
+
+[node name="Turret264" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30517, 547)
+rotation = -3.14159
+
+[node name="Turret265" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30564, 547)
+rotation = -3.14159
+
+[node name="Turret266" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30611, 547)
+rotation = -3.14159
+
+[node name="Turret267" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30658, 547)
+rotation = -3.14159
+
+[node name="Turret268" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30705, 547)
+rotation = -3.14159
+
+[node name="Turret269" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30752, 547)
+rotation = -3.14159
+
+[node name="Turret270" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30799, 547)
+rotation = -3.14159
+
+[node name="Turret271" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30846, 547)
+rotation = -3.14159
+
+[node name="Turret272" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30893, 547)
+rotation = -3.14159
+
+[node name="Turret273" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30940, 547)
+rotation = -3.14159
+
+[node name="Turret274" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(30987, 547)
+rotation = -3.14159
+
+[node name="Turret275" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(31034, 547)
+rotation = -3.14159
+
+[node name="Turret276" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(31081, 547)
+rotation = -3.14159
+
+[node name="Turret277" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(31128, 547)
+rotation = -3.14159
+
+[node name="Turret278" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(31175, 547)
+rotation = -3.14159
+
+[node name="Turret279" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(19812, 778)
+
+[node name="Turret280" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(25208, 778)
+
+[node name="Turret281" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(25802, 778)
+
+[node name="Turret282" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(25079, 567)
+rotation = -3.14159
+
+[node name="Turret283" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(25673, 567)
+rotation = -3.14159
+
+[node name="Turret284" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(25948, 778)
+
+[node name="Turret285" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(26542, 778)
+
+[node name="Turret286" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(26447, 778)
+
+[node name="Turret287" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(25819, 567)
+rotation = -3.14159
+
+[node name="Turret288" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(25802, 778)
+
+[node name="Turret289" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(25673, 567)
+rotation = -3.14159
+
+[node name="Turret290" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(25948, 778)
+
+[node name="Turret291" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(25819, 567)
+rotation = -3.14159
+
+[node name="Turret292" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(29366, 778)
+
+[node name="Turret293" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(29512, 778)
+
+[node name="Turret294" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(29366, 778)
+
+[node name="Turret295" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(29031, 778)
+
+[node name="Turret296" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(28759, 778)
+
+[node name="Turret297" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(29512, 778)
+
+[node name="Turret298" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(26413, 567)
+rotation = -3.14159
+
+[node name="Turret299" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(26649, 567)
+rotation = -3.14159
+
+[node name="Turret300" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(27399, 567)
+rotation = -3.14159
+
+[node name="Turret301" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(27635, 567)
+rotation = -3.14159
+
+[node name="Turret302" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(27915, 567)
+rotation = -3.14159
+
+[node name="Turret303" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(28151, 567)
+rotation = -3.14159
+
+[node name="Turret304" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(28035, 567)
+rotation = -3.14159
+
+[node name="Turret305" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(28271, 567)
+rotation = -3.14159
+
+[node name="Turret306" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(28729, 567)
+rotation = -3.14159
+
+[node name="Turret307" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(28965, 567)
+rotation = -3.14159
+
+[node name="Turret308" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(28849, 567)
+rotation = -3.14159
+
+[node name="Turret309" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(29085, 567)
+rotation = -3.14159
+
+[node name="Turret310" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(26944, 567)
+rotation = -3.14159
+
+[node name="Turret311" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(26991, 567)
+rotation = -3.14159
+
+[node name="Turret312" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(27038, 567)
+rotation = -3.14159
+
+[node name="Turret313" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(27477, 778)
+
+[node name="Turret314" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(27524, 778)
+
+[node name="Turret315" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(27571, 778)
+
+[node name="Turret316" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(28146, 778)
+
+[node name="Turret317" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(28193, 778)
+
+[node name="Turret318" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(28240, 778)
+
+[node name="Turret319" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(28379, 778)
+
+[node name="Turret320" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(28426, 778)
+
+[node name="Turret321" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(28473, 778)
+
+[node name="Turret322" parent="Turrets" instance=ExtResource("5_kivhh")]
+position = Vector2(26992, 778)
+
+[node name="Boxes" type="Node2D" parent="."]
+
+[node name="Box" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(1165, 456)
 
-[node name="Box2" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box2" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(1234, 191)
 
-[node name="Box3" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box3" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(1277, 191)
 
-[node name="Box4" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box4" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(1277, 233)
 
-[node name="Box6" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box6" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(2033, 191)
 
-[node name="Box7" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box7" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(2076, 191)
 
-[node name="Box8" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box8" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(2076, 233)
 
-[node name="Box9" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box9" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(2623, 456)
 
-[node name="Box10" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box10" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(2812, 456)
 
-[node name="Box11" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box11" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(3427, 456)
 
-[node name="Box12" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box12" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(4283, 456)
 
-[node name="Box13" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box13" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(4326, 456)
 
-[node name="Box14" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box14" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(4368, 456)
 
-[node name="Box15" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box15" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(4411, 456)
 
-[node name="Box16" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box16" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(5673, 456)
 
-[node name="Box17" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box17" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(5717, 456)
 
-[node name="Box18" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box18" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(5717, 414)
 
-[node name="Box19" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box19" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(6692, 456)
 
-[node name="Box20" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box20" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(6892, 191)
 
-[node name="Box21" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box21" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(7041, 190)
 
-[node name="Box22" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box22" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(7041, 232)
 
-[node name="Box23" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box23" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(7493, 456)
 
-[node name="Box24" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box24" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(7527, 191)
 
-[node name="Box25" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box25" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(7527, 233)
 
-[node name="Box26" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box26" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(7569, 233)
 
-[node name="Box27" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box27" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(7569, 191)
 
-[node name="Box28" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box28" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(7739, 233)
 
-[node name="Box29" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box29" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(7739, 191)
 
-[node name="Box5" parent="Node2D" instance=ExtResource("5_t35h8")]
+[node name="Box5" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(1410, 456)
 
-[node name="Box16" parent="." instance=ExtResource("5_t35h8")]
+[node name="Box30" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(7939, 456)
 
-[node name="Box17" parent="." instance=ExtResource("5_t35h8")]
+[node name="Box31" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(7983, 456)
 
-[node name="Box18" parent="." instance=ExtResource("5_t35h8")]
+[node name="Box32" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(7983, 414)
 
-[node name="Box19" parent="." instance=ExtResource("5_t35h8")]
+[node name="Box33" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(12314, 191)
 
-[node name="Box21" parent="." instance=ExtResource("5_t35h8")]
+[node name="Box34" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(12356, 191)
 
-[node name="Box20" parent="." instance=ExtResource("5_t35h8")]
+[node name="Box35" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(12314, 233)
+
+[node name="Box36" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(18083, 805)
+
+[node name="Box37" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(18152, 540)
+
+[node name="Box38" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(18195, 540)
+
+[node name="Box39" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(18195, 582)
+
+[node name="Box40" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(18951, 540)
+
+[node name="Box41" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(18994, 540)
+
+[node name="Box42" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(18994, 582)
+
+[node name="Box43" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(19541, 805)
+
+[node name="Box44" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(19730, 805)
+
+[node name="Box45" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(20345, 805)
+
+[node name="Box46" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(21201, 805)
+
+[node name="Box47" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(21244, 805)
+
+[node name="Box48" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(21286, 805)
+
+[node name="Box49" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(21329, 805)
+
+[node name="Box50" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(22591, 805)
+
+[node name="Box51" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(22635, 805)
+
+[node name="Box52" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(22635, 763)
+
+[node name="Box53" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(23610, 805)
+
+[node name="Box54" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(23810, 540)
+
+[node name="Box55" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(23959, 539)
+
+[node name="Box56" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(23959, 581)
+
+[node name="Box57" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(24411, 805)
+
+[node name="Box58" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(24445, 540)
+
+[node name="Box59" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(24445, 582)
+
+[node name="Box60" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(24487, 582)
+
+[node name="Box61" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(24487, 540)
+
+[node name="Box62" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(24657, 582)
+
+[node name="Box63" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(24657, 540)
+
+[node name="Box64" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(18328, 805)
+
+[node name="Box65" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(24857, 805)
+
+[node name="Box66" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(24901, 805)
+
+[node name="Box67" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(24901, 763)
+
+[node name="Box68" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(29232, 540)
+
+[node name="Box69" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(29274, 540)
+
+[node name="Box70" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(29232, 582)
+
+[node name="Box71" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37895, -1778)
+
+[node name="Box72" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37937, -1778)
+
+[node name="Box74" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37937, -1736)
+
+[node name="Box73" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37895, -1736)
+
+[node name="Box75" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37979, -1778)
+
+[node name="Box76" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38021, -1778)
+
+[node name="Box77" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38021, -1736)
+
+[node name="Box78" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37979, -1736)
+
+[node name="Box79" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38063, -1778)
+
+[node name="Box80" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38105, -1778)
+
+[node name="Box81" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38105, -1736)
+
+[node name="Box82" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38063, -1736)
+
+[node name="Box83" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38147, -1778)
+
+[node name="Box84" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38189, -1778)
+
+[node name="Box85" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38189, -1736)
+
+[node name="Box86" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38147, -1736)
+
+[node name="Box87" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38230, -1778)
+
+[node name="Box88" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38272, -1778)
+
+[node name="Box89" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38272, -1736)
+
+[node name="Box90" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38230, -1736)
+
+[node name="Box91" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38314, -1778)
+
+[node name="Box92" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38356, -1778)
+
+[node name="Box93" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38356, -1736)
+
+[node name="Box94" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38314, -1736)
+
+[node name="Box95" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38398, -1778)
+
+[node name="Box96" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38440, -1778)
+
+[node name="Box97" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38440, -1736)
+
+[node name="Box98" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38398, -1736)
+
+[node name="Box99" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38482, -1778)
+
+[node name="Box100" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38524, -1778)
+
+[node name="Box101" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38524, -1736)
+
+[node name="Box102" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38482, -1736)
+
+[node name="Box103" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37895, -1862)
+
+[node name="Box263" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37895, -1862)
+
+[node name="Box104" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37937, -1862)
+
+[node name="Box105" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37937, -1820)
+
+[node name="Box106" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37895, -1820)
+
+[node name="Box264" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37853, -1778)
+
+[node name="Box265" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37853, -1736)
+
+[node name="Box231" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37811, -1736)
+
+[node name="Box269" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37769, -1736)
+
+[node name="Box266" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37853, -1862)
+
+[node name="Box267" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37853, -1862)
+
+[node name="Box268" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37853, -1820)
+
+[node name="Box107" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37979, -1862)
+
+[node name="Box108" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38021, -1862)
+
+[node name="Box109" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38021, -1820)
+
+[node name="Box110" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37979, -1820)
+
+[node name="Box111" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38063, -1862)
+
+[node name="Box112" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38105, -1862)
+
+[node name="Box113" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38105, -1820)
+
+[node name="Box114" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38063, -1820)
+
+[node name="Box115" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38147, -1862)
+
+[node name="Box116" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38189, -1862)
+
+[node name="Box117" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38189, -1820)
+
+[node name="Box118" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38147, -1820)
+
+[node name="Box119" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38230, -1862)
+
+[node name="Box120" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38272, -1862)
+
+[node name="Box121" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38272, -1820)
+
+[node name="Box122" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38230, -1820)
+
+[node name="Box123" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38314, -1862)
+
+[node name="Box124" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38356, -1862)
+
+[node name="Box125" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38356, -1820)
+
+[node name="Box126" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38314, -1820)
+
+[node name="Box127" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38398, -1862)
+
+[node name="Box128" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38440, -1862)
+
+[node name="Box129" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38440, -1820)
+
+[node name="Box130" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38398, -1820)
+
+[node name="Box131" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38482, -1862)
+
+[node name="Box132" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38524, -1862)
+
+[node name="Box133" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38524, -1820)
+
+[node name="Box134" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38482, -1820)
+
+[node name="Box135" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37895, -1946)
+
+[node name="Box136" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37937, -1946)
+
+[node name="Box137" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37937, -1904)
+
+[node name="Box138" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37895, -1904)
+
+[node name="Box139" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37979, -1946)
+
+[node name="Box140" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38021, -1946)
+
+[node name="Box141" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38021, -1904)
+
+[node name="Box142" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37979, -1904)
+
+[node name="Box143" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38063, -1946)
+
+[node name="Box144" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38105, -1946)
+
+[node name="Box145" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38105, -1904)
+
+[node name="Box146" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38063, -1904)
+
+[node name="Box147" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38147, -1946)
+
+[node name="Box148" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38189, -1946)
+
+[node name="Box149" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38189, -1904)
+
+[node name="Box150" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38147, -1904)
+
+[node name="Box151" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38230, -1946)
+
+[node name="Box152" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38272, -1946)
+
+[node name="Box153" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38272, -1904)
+
+[node name="Box154" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38230, -1904)
+
+[node name="Box155" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38314, -1946)
+
+[node name="Box156" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38356, -1946)
+
+[node name="Box157" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38356, -1904)
+
+[node name="Box158" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38314, -1904)
+
+[node name="Box159" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38398, -1946)
+
+[node name="Box160" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38440, -1946)
+
+[node name="Box161" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38440, -1904)
+
+[node name="Box162" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38398, -1904)
+
+[node name="Box163" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38482, -1946)
+
+[node name="Box164" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38524, -1946)
+
+[node name="Box165" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38524, -1904)
+
+[node name="Box166" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38482, -1904)
+
+[node name="Box167" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37895, -2030)
+
+[node name="Box168" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37937, -2030)
+
+[node name="Box169" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37937, -1988)
+
+[node name="Box170" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37895, -1988)
+
+[node name="Box171" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37979, -2030)
+
+[node name="Box172" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38021, -2030)
+
+[node name="Box173" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38021, -1988)
+
+[node name="Box174" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37979, -1988)
+
+[node name="Box175" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38063, -2030)
+
+[node name="Box176" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38105, -2030)
+
+[node name="Box177" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38105, -1988)
+
+[node name="Box178" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38063, -1988)
+
+[node name="Box179" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38147, -2030)
+
+[node name="Box180" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38189, -2030)
+
+[node name="Box181" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38189, -1988)
+
+[node name="Box182" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38147, -1988)
+
+[node name="Box183" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38230, -2030)
+
+[node name="Box184" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38272, -2030)
+
+[node name="Box185" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38272, -1988)
+
+[node name="Box186" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38230, -1988)
+
+[node name="Box187" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38314, -2030)
+
+[node name="Box188" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38356, -2030)
+
+[node name="Box189" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38356, -1988)
+
+[node name="Box190" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38314, -1988)
+
+[node name="Box191" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38398, -2030)
+
+[node name="Box192" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38440, -2030)
+
+[node name="Box193" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38440, -1988)
+
+[node name="Box194" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38398, -1988)
+
+[node name="Box195" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38482, -2030)
+
+[node name="Box196" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38524, -2030)
+
+[node name="Box197" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38524, -1988)
+
+[node name="Box198" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38482, -1988)
+
+[node name="Box199" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37895, -2114)
+
+[node name="Box200" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37937, -2114)
+
+[node name="Box201" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37937, -2072)
+
+[node name="Box202" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37895, -2072)
+
+[node name="Box203" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37979, -2114)
+
+[node name="Box204" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38021, -2114)
+
+[node name="Box205" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38021, -2072)
+
+[node name="Box206" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37979, -2072)
+
+[node name="Box207" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38063, -2114)
+
+[node name="Box208" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38105, -2114)
+
+[node name="Box209" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38105, -2072)
+
+[node name="Box210" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38063, -2072)
+
+[node name="Box211" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38147, -2114)
+
+[node name="Box212" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38189, -2114)
+
+[node name="Box213" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38189, -2072)
+
+[node name="Box214" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38147, -2072)
+
+[node name="Box215" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38230, -2114)
+
+[node name="Box216" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38272, -2114)
+
+[node name="Box217" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38272, -2072)
+
+[node name="Box218" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38230, -2072)
+
+[node name="Box219" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38314, -2114)
+
+[node name="Box220" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38356, -2114)
+
+[node name="Box221" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38356, -2072)
+
+[node name="Box222" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38314, -2072)
+
+[node name="Box223" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38398, -2114)
+
+[node name="Box224" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38440, -2114)
+
+[node name="Box225" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38440, -2072)
+
+[node name="Box226" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38398, -2072)
+
+[node name="Box227" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38482, -2114)
+
+[node name="Box228" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38524, -2114)
+
+[node name="Box229" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38524, -2072)
+
+[node name="Box230" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38482, -2072)
+
+[node name="Box232" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37937, -2198)
+
+[node name="Box233" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37937, -2156)
+
+[node name="Box235" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37979, -2198)
+
+[node name="Box236" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38021, -2198)
+
+[node name="Box237" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38021, -2156)
+
+[node name="Box238" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(37979, -2156)
+
+[node name="Box239" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38063, -2198)
+
+[node name="Box240" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38105, -2198)
+
+[node name="Box241" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38105, -2156)
+
+[node name="Box242" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38063, -2156)
+
+[node name="Box243" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38147, -2198)
+
+[node name="Box244" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38189, -2198)
+
+[node name="Box245" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38189, -2156)
+
+[node name="Box246" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38147, -2156)
+
+[node name="Box247" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38230, -2198)
+
+[node name="Box248" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38272, -2198)
+
+[node name="Box249" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38272, -2156)
+
+[node name="Box250" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38230, -2156)
+
+[node name="Box251" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38314, -2198)
+
+[node name="Box252" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38356, -2198)
+
+[node name="Box253" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38356, -2156)
+
+[node name="Box254" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38314, -2156)
+
+[node name="Box255" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38398, -2198)
+
+[node name="Box256" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38440, -2198)
+
+[node name="Box257" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38440, -2156)
+
+[node name="Box258" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38398, -2156)
+
+[node name="Box259" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38482, -2198)
+
+[node name="Box260" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38524, -2198)
+
+[node name="Box261" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38524, -2156)
+
+[node name="Box262" parent="Boxes" instance=ExtResource("5_t35h8")]
+position = Vector2(38482, -2156)
+
+[node name="Cake" type="Sprite2D" parent="."]
+position = Vector2(37320, -1747)
+scale = Vector2(0.489973, 0.489973)
+texture = ExtResource("6_u0o87")
