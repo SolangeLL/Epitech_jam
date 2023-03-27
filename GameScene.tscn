@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://71ep0rgnwelw"]
+[gd_scene load_steps=10 format=3 uid="uid://71ep0rgnwelw"]
 
 [ext_resource type="PackedScene" uid="uid://dd6jqvn8wxobv" path="res://Player.tscn" id="1"]
 [ext_resource type="PackedScene" path="res://Map.tscn" id="2_5gtcb"]
@@ -10,27 +10,70 @@
 [sub_resource type="GDScript" id="GDScript_d6e8k"]
 script/source = "extends Node
 
+var score_file = \"res://assets/config.txt\"
+var best = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	$music.play()
-
+	load_score()
+	$Music.play()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
+	if $Player.get_nb_death() > int(best):
+		$Player/ScoreHUD/CurrentDeath.modulate = Color(1, 0, 0)
 	pass
+
+func _notification(what):
+	if what == NOTIFICATION_WM_CLOSE_REQUEST:
+		if $Player.get_nb_death() < int(best):
+			save_score(str($Player.get_nb_death()))
+		get_tree().quit() 
+
+
+func _on_cake_body_entered(body):
+	if body.is_in_group(\"Player\"):
+		body.win()
+
+func _on_easter_egg_body_entered(body):
+	$Player.cheat()
+
+func load_score():
+	var file = FileAccess.open(score_file, FileAccess.READ)
+	print(file.get_as_text())
+	best = file.get_as_text()
+	print(\"best: \", best)
+	$Player/ScoreHUD.set_best_death(best)
+	file.close()
+
+func save_score(score):
+	var file = FileAccess.open(score_file, FileAccess.WRITE)
+	file.store_string(score)
+	print(file)
+	file.close()
 "
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_l3myt"]
+radius = 40.0
+height = 92.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pcwq4"]
+size = Vector2(923, 582)
 
 [node name="GameScene" type="Node"]
 script = SubResource("GDScript_d6e8k")
 
+[node name="Polygon2D" type="Polygon2D" parent="."]
+color = Color(0.368627, 0.521569, 0.568627, 1)
+polygon = PackedVector2Array(-4915, -4399, -5076, 3946, 40281, 3906, 39959, -6335, -4915, -5690)
+
 [node name="Map" parent="." instance=ExtResource("2_5gtcb")]
 
-[node name="CharacterBody2D" parent="." instance=ExtResource("1")]
-position = Vector2(87, 194)
-
-[node name="music" type="AudioStreamPlayer2D" parent="."]
+[node name="Music" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_wiaed")
+
+[node name="Player" parent="." instance=ExtResource("1")]
+position = Vector2(87, 194)
 
 [node name="Turrets" type="Node2D" parent="."]
 
@@ -2326,7 +2369,23 @@ position = Vector2(38524, -2156)
 [node name="Box262" parent="Boxes" instance=ExtResource("5_t35h8")]
 position = Vector2(38482, -2156)
 
-[node name="Cake" type="Sprite2D" parent="."]
+[node name="Cake" type="Area2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="Cake"]
 position = Vector2(37320, -1747)
 scale = Vector2(0.489973, 0.489973)
 texture = ExtResource("6_u0o87")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cake"]
+position = Vector2(37320, -1728)
+shape = SubResource("CapsuleShape2D_l3myt")
+
+[node name="EasterEgg" type="Area2D" parent="."]
+position = Vector2(-2788, -191)
+
+[node name="EasterEggCollide" type="CollisionShape2D" parent="EasterEgg"]
+position = Vector2(257.5, 340)
+shape = SubResource("RectangleShape2D_pcwq4")
+
+[connection signal="body_entered" from="Cake" to="." method="_on_cake_body_entered"]
+[connection signal="body_entered" from="EasterEgg" to="." method="_on_easter_egg_body_entered"]

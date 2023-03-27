@@ -4,9 +4,13 @@ var run_speed = 350
 var jump_speed = -700
 var gravity = 1700
 var rotation_deg = 0
+var nb_death = 0;
 
 var jumping = false
 var can_die = true
+
+func get_nb_death():
+	return nb_death
 
 func get_input():
 	velocity.x = 0
@@ -17,7 +21,6 @@ func get_input():
 	var debug = Input.is_action_just_pressed("debug_speeed")
 	var debug2 = Input.is_action_just_pressed("debug_speed_buff")
 	var god = Input.is_action_just_pressed("god_mode")
-	
 	
 	if debug:
 		run_speed += 100
@@ -44,6 +47,7 @@ func get_input():
 		velocity.x -= run_speed
 
 func _ready():
+	$WinHUD.hide()
 	pass # Replace with function body.
 
 func _physics_process(delta):
@@ -66,3 +70,21 @@ func die():
 	if can_die:
 		$DieSound.play()
 		global_position = Vector2(220,213)
+		nb_death += 1
+		$ScoreHUD.update_death(str(nb_death))
+
+func win():
+	$WinHUD.set_win_text(str(nb_death))
+	$WinHUD.show()
+	$WinHUD.start_countdown()
+
+func cheat():
+	$WinHUD.set_cheat_text()
+	$WinHUD.show()
+	$WinHUD.start_countdown()
+
+func _on_win_hud_new_game():
+	can_die = true
+	die()
+	$WinHUD.hide()
+	nb_death = 0

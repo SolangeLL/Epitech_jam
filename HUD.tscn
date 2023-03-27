@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://tlhwhtw2xt0y"]
+
+[ext_resource type="Script" path="res://Scripts/HUD.gd" id="1_l8h1y"]
+[ext_resource type="FontFile" uid="uid://bh0i10njc1ht2" path="res://assets/fonts/portal.ttf" id="2_nn4mt"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_l8h1y")
+
+[node name="CurrentDeath" type="Label" parent="."]
+offset_left = 8.0
+offset_right = 132.0
+offset_bottom = 39.0
+theme_override_fonts/font = ExtResource("2_nn4mt")
+theme_override_font_sizes/font_size = 30
+text = "Current: 0"
+
+[node name="BestDeath" type="Label" parent="."]
+offset_left = 8.0
+offset_top = 48.0
+offset_right = 91.0
+offset_bottom = 87.0
+theme_override_fonts/font = ExtResource("2_nn4mt")
+theme_override_font_sizes/font_size = 30
+text = "Best: 0"
